@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version><![CDATA[42022013]]></Version><Comment></Comment><SourceWindowName></SourceWindowName><Class>XMFN</Class><ClipVersion>1</ClipVersion><ClipTimeStamp>3.462446e+9</ClipTimeStamp><ClipAuthor></ClipAuthor><clipboardAsText><![CDATA[m_PrimeryKey(  )]]></clipboardAsText><Clipboard><fmxmlsnippet type="FMObjectList"><CustomFunction id="55" functionArity="0" visible="True" parameters="" name="m_PrimeryKey"><Calculation>/*
+--------
+m_PrimeryKey
+versie 0.3
+	primery04 toegevoegd
+--------
+*/
+
+Let ( [
+	  ~primery01 = "___kp_ID"
+	; ~primery02 = "__kp_ID"
+	; ~primery03 = "id"
+	; ~primery04 = "___pk_ID"
+
+	; ~table = Get ( LayoutTableName)
+] ;
+	Case ( 
+	  EvaluationError (  GetField ( ~table &amp; "::" &amp; ~primery01 ) ) = 0
+		; GetField (  ~table &amp; "::" &amp; ~primery01 )
+
+	; EvaluationError (  GetField (  ~table &amp; "::" &amp; ~primery02   )) = 0
+		; GetField (  ~table &amp;  "::" &amp; ~primery02  )
+
+	; EvaluationError (  GetField (  ~table &amp; "::" &amp; ~primery03   ) ) = 0
+		; GetField (  ~table &amp; "::" &amp; ~primery03 )
+
+	; EvaluationError (  GetField (  ~table &amp; "::" &amp; ~primery04   ) ) = 0
+		; GetField (  ~table &amp; "::" &amp; ~primery04 )
+
+	; #( "error" ; "geen Primery key op layout: " &amp; Get ( LayoutName ) &amp; "@" &amp; Get ( LayoutTableName ) )
+	)
+
+)</Calculation></CustomFunction></fmxmlsnippet></Clipboard><Picture></Picture></FMClipboard>

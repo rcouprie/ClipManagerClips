@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version><![CDATA[42052142]]></Version><Comment></Comment><SourceWindowName><![CDATA[Clip Manager]]></SourceWindowName><Class>XMFN</Class><ClipVersion>1</ClipVersion><ClipTimeStamp>-2.147484e+9</ClipTimeStamp><ClipAuthor><![CDATA[filemaker]]></ClipAuthor><clipboardAsText><![CDATA[sql.debug( _executeSQL )]]></clipboardAsText><Clipboard><fmxmlsnippet type="FMObjectList"><CustomFunction id="80" functionArity="1" visible="True" parameters="_executeSQL" name="sql.debug"><Calculation>If ( 
+
+
+
+//the sql call results in an error, return empty so the error will be returned
+
+_executeSQL = "?" ; "" ; 
+
+
+
+//the sql call is executed correctly, just return the result
+
+_executeSQL
+
+)
+
+
+
+// ===================================
+
+/*
+
+
+
+    This function is published on FileMaker Custom Functions
+
+    to check for updates and provide feedback and bug reports
+
+    please visit http://www.fmfunctions.com/fid/335
+
+
+
+    Prototype: sql.debug( _executeSQL )
+
+    Function Author: Andries Heylen (http://www.fmfunctions.com/mid/57)
+
+    Last updated: 28 July 2012
+
+    Version: 2.2
+
+
+
+*/
+
+// ===================================</Calculation></CustomFunction></fmxmlsnippet></Clipboard><Picture></Picture></FMClipboard>

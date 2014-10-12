@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version><![CDATA[42032024]]></Version><Comment></Comment><SourceWindowName></SourceWindowName><Class>XMFN</Class><ClipVersion>1</ClipVersion><ClipTimeStamp>3.465635e+9</ClipTimeStamp><ClipAuthor></ClipAuthor><clipboardAsText><![CDATA[zoekInterfaceRepNr( zoekwoord )]]></clipboardAsText><Clipboard><fmxmlsnippet type="FMObjectList"><CustomFunction id="51" functionArity="1" visible="True" parameters="zoekwoord" name="zoekInterfaceRepNr"><Calculation>/*Let ( [
+	//zoekwoord = "pdf icon"
+	 veld		= @Interface_globals::naam_data
+
+
+        ; lijst 		= List ( veld )
+	; positie 	= Position ( lijst ; "pdf icon" ; 1 ; 1 )
+	; zoekLijst = Left ( lijst ; positie  )
+
+	; regelNr = PatternCount ( zoeklijst ; "¶" )  + 1
+
+	; regel = GetValue ( lijst ; regelNr )
+	];
+List ( regelNr ; regel )
+)*/</Calculation></CustomFunction></fmxmlsnippet></Clipboard><Picture></Picture></FMClipboard>

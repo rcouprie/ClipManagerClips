@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version><![CDATA[42032024]]></Version><Comment><![CDATA[Script Template]]></Comment><SourceWindowName><![CDATA[Clip Manager]]></SourceWindowName><Class>XMSS</Class><ClipVersion>1</ClipVersion><ClipTimeStamp>3.466425e+9</ClipTimeStamp><ClipAuthor><![CDATA[filemaker]]></ClipAuthor><clipboardAsText><![CDATA[##==============================================#   Purpose:		
+Beschrijf het doel van het script#   Parameters:	
+een#                              ---------------------------#				
+$een = (string) "terug", "init"#				
+$twee = (string) second parameter#				
+$drie = (num) expected#                              ---------------------------#   Called by:		
+(script) any#   Author:               Richard Couprie#   History:		
+Last change:#				
+Richard Couprie
+::
+23-08-12 / Template aangepast#				
+  / Template aangepast#				
+  / Indents aangepast (tabs:4, spatie:2)#				
+  / Template gemaakt#   Notes:			
+None#==============================================##  @locking = globaal#  @locking = globaal#	
+-----	  opmerking	 	-----#	
+-----	     -    	 	-----#	
+i.v.m. dependencies#	
+-----	     -    	 	-----]]></clipboardAsText><Clipboard><fmxmlsnippet type="FMObjectList"><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="89" name="Comment"><Text>==============================================</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Purpose:		Beschrijf het doel van het script</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Parameters:	een</Text></Step><Step enable="True" id="89" name="Comment"><Text>                              ---------------------------</Text></Step><Step enable="True" id="89" name="Comment"><Text>				$een = (string) "terug", "init"</Text></Step><Step enable="True" id="89" name="Comment"><Text>				$twee = (string) second parameter</Text></Step><Step enable="True" id="89" name="Comment"><Text>				$drie = (num) expected</Text></Step><Step enable="True" id="89" name="Comment"><Text>                              ---------------------------</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Called by:		(script) any</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Author:               Richard Couprie</Text></Step><Step enable="True" id="89" name="Comment"><Text>   History:		Last change:</Text></Step><Step enable="True" id="89" name="Comment"><Text>				Richard Couprie::23-08-12 / Template aangepast</Text></Step><Step enable="True" id="89" name="Comment"><Text>				  / Template aangepast</Text></Step><Step enable="True" id="89" name="Comment"><Text>				  / Indents aangepast (tabs:4, spatie:2)</Text></Step><Step enable="True" id="89" name="Comment"><Text>				  / Template gemaakt</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Notes:			None</Text></Step><Step enable="True" id="89" name="Comment"><Text>==============================================</Text></Step><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="89" name="Comment"><Text>  @locking = globaal</Text></Step><Step enable="True" id="89" name="Comment"><Text>  @locking = globaal</Text></Step><Step enable="True" id="89" name="Comment"><Text>	-----	  opmerking	 	-----</Text></Step><Step enable="True" id="89" name="Comment"><Text>	-----	     -    	 	-----</Text></Step><Step enable="True" id="89" name="Comment"><Text>	i.v.m. dependencies</Text></Step><Step enable="True" id="89" name="Comment"><Text>	-----	     -    	 	-----</Text></Step></fmxmlsnippet></Clipboard><Picture></Picture></FMClipboard>

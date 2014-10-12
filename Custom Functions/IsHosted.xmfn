@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version><![CDATA[42042060]]></Version><Comment></Comment><SourceWindowName></SourceWindowName><Class>XMFN</Class><ClipVersion>1</ClipVersion><ClipTimeStamp>-2.147484e+9</ClipTimeStamp><ClipAuthor></ClipAuthor><clipboardAsText><![CDATA[IsHosted(  )]]></clipboardAsText><Clipboard><fmxmlsnippet type="FMObjectList"><CustomFunction id="65" functionArity="0" visible="True" parameters="" name="IsHosted"><Calculation>/**
+ * =====================================
+ * IsHosted ( )
+ *
+ * RETURNS:
+ *		Returns True if file is hosted, otherwise False.
+ *
+ * PARAMETERS:
+ *		n.a.
+ * EXAMPLE:
+ *		if  ( IsHosted )
+ *
+ * DEPENDENCIES: none
+ *
+ * HISTORY:
+ *		MODIFIED on ... by ...
+ *		CREATED on 01-1-2013 by Richard Couprie
+ * =====================================
+ */
+
+Position ( Get ( HostApplicationVersion ) ; "Server" ; 1 ; 1 ) &gt; 0</Calculation></CustomFunction></fmxmlsnippet></Clipboard><Picture></Picture></FMClipboard>

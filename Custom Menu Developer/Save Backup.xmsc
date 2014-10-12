@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version><![CDATA[42042060]]></Version><Comment></Comment><SourceWindowName><![CDATA[Clip Manager]]></SourceWindowName><Class>XMSC</Class><ClipVersion>1</ClipVersion><ClipTimeStamp>-2.147484e+9</ClipTimeStamp><ClipAuthor><![CDATA[filemaker]]></ClipAuthor><clipboardAsText><![CDATA[@ Save Backup]]></clipboardAsText><Clipboard><fmxmlsnippet type="FMObjectList"><Script includeInMenu="False" runFullAccess="False" id="977" name="@ Save Backup" clipID="316061"><Step enable="True" id="89" name="Comment" clipID="901769"/><Step enable="True" id="89" name="Comment" clipID="102767"><Text>==============================================</Text></Step><Step enable="True" id="89" name="Comment" clipID="609398"><Text>   Purpose:		
+Save een backup van het bestand</Text></Step><Step enable="True" id="89" name="Comment" clipID="93350"><Text>   Parameters:	
+n.a.</Text></Step><Step enable="True" id="89" name="Comment" clipID="668286"><Text>                              ---------------------------</Text></Step><Step enable="True" id="89" name="Comment" clipID="765050"><Text>   Called by:		
+(menu) Developer</Text></Step><Step enable="True" id="89" name="Comment" clipID="444633"><Text>   Author:               Richard Couprie</Text></Step><Step enable="True" id="89" name="Comment" clipID="586938"><Text>   History:		
+Last change:</Text></Step><Step enable="True" id="89" name="Comment" clipID="25251"><Text>				
+Richard Couprie
+::
+11-05-2013 / </Text></Step><Step enable="True" id="89" name="Comment" clipID="260535"><Text>				
+  / get ( MultiUserState )  en HostIP</Text></Step><Step enable="True" id="89" name="Comment" clipID="465548"><Text>				
+Richard Couprie
+::
+09-05-2013 / </Text></Step><Step enable="True" id="89" name="Comment" clipID="281474"><Text>				
+  / get ( MultiUserState ) </Text></Step><Step enable="True" id="89" name="Comment" clipID="289054"><Text>   Notes:			
+Werkt alleen op een lokaal bestand</Text></Step><Step enable="True" id="89" name="Comment" clipID="695017"><Text>==============================================</Text></Step><Step enable="True" id="89" name="Comment" clipID="930301"><Text/></Step><Step enable="True" id="68" name="If" clipID="66911"><Calculation>Developer</Calculation></Step><Step enable="True" id="1" name="Perform Script" clipID="510534"><Script id="980" name="@ error capture on"/></Step><Step enable="True" id="86" name="Set Error Capture" clipID="224076"><Set state="True"/></Step><Step enable="True" id="89" name="Comment" clipID="134868"><Text>Test for local file status</Text></Step><Step enable="True" id="141" name="Set Variable" clipID="119951"><Value><Calculation>Get( MultiUserState ) = 1 or Get( MultiUserState ) = 0</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$isLocalFile</Name></Step><Step enable="True" id="141" name="Set Variable" clipID="247059"><Value><Calculation>IsEmpty ( Get ( HostIPAddress ) )</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$isLocalFile</Name></Step><Step enable="True" id="68" name="If" clipID="370468"><Calculation>$isLocalFile</Calculation></Step><Step enable="True" id="89" name="Comment" clipID="175042"/><Step enable="True" id="89" name="Comment" clipID="795616"><Text>------------------- VARIABLES</Text></Step><Step enable="True" id="89" name="Comment" clipID="366756"/><Step enable="True" id="89" name="Comment" clipID="294631"><Text>Provide a folder and timestamp value to be added to the file path. You can use parent folders by using "../"</Text></Step><Step enable="True" id="141" name="Set Variable" clipID="792051"><Value><Calculation>"Backups/"</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$folder</Name></Step><Step enable="True" id="141" name="Set Variable" clipID="780638"><Value><Calculation>Let( [
+	~now = Get ( CurrentTimeStamp ) ;  
+	~year = Right( Year ( ~now ) ; 2 ) ;  
+	~month = Right( "000" &amp; Month ( ~now ) ; 2 ) ;  
+	~day = Right( "000" &amp; Day ( ~now ) ; 2 ) ;  
+	~hour = Right( "000" &amp; Hour ( ~now ) ; 2 ) ;  
+	~mins = Right( "000" &amp; Minute ( ~now ) ; 2 ) ;  
+	~secs = Right( "000" &amp; Seconds ( ~now ) ; 2 ) ;
+	~stamp = ~year &amp; ~month &amp; ~day &amp; "_" &amp; ~hour &amp; ~mins &amp; ~secs
+];
+
+	~stamp &amp; "_"
+
+)</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$timestamp</Name></Step><Step enable="True" id="141" name="Set Variable" clipID="549211"><Value><Calculation>Get ( FileName ) &amp; ".fmp12"</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$filenaam</Name></Step><Step enable="True" id="141" name="Set Variable" clipID="127931"><Value><Calculation>/*Let(   [ 
+	//$folder = "../Backups/"; // used for testing
+	~containers 		= PatternCount ( $folder ; "../" );
+	~filename 		= $timestamp &amp; $filenaam;
+	~folderName 	= Substitute ( $folder ; "../" ; "" );
+	~absolutePath 	= Substitute (  Dirname (  Get ( FilePath ) &amp; "/" ) ; "file:" ; "" );
+	~pathParts 		= Substitute ( ~absolutePath ; "/" ; "¶_" );
+	~keep 			= ValueCount ( ~pathParts ) - ~containers;
+	~realPath 		= LeftValues ( ~pathParts ; ~keep - 1 ); // account for root /
+	~realPath 		= Left ( ~realPath ; Length ( ~realPath ) - 1 ); // take off extra return from LeftValues
+	~newpath 		= Substitute ( ~realPath ; "¶_" ; "/" )
+] ;  
+	Choose ( Get ( SystemPlatform ) - 1 ; "filemac:" ; "filewin:" )
+		&amp; Substitute ( ~newpath &amp; "/" &amp; ~folderName &amp; "/" &amp; ~filename ; "//" ;"/" )
+
+)*/</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$path</Name></Step><Step enable="True" id="89" name="Comment" clipID="230280"/><Step enable="True" id="89" name="Comment" clipID="72767"><Text>------------------- EXECUTION</Text></Step><Step enable="True" id="89" name="Comment" clipID="184800"/><Step enable="True" id="37" name="Save a Copy as" clipID="146827"><AutoOpen state="False"/><CreateEmail state="False"/><SaveAsType value="CompactedCopy"/><UniversalPathList>$path</UniversalPathList></Step><Step enable="True" id="68" name="If" clipID="325449"><Calculation>Get( LastError ) ≠ 0</Calculation></Step><Step enable="True" id="87" name="Show Custom Dialog" clipID="794010"><Title><Calculation>"Error"</Calculation></Title><Message><Calculation>"Geen backup gemaakt. De backups-map bestaat niet. Backup op bureaublad maken?"</Calculation></Message><Buttons><Button CommitState="False">Bureaublad</Button><Button CommitState="False">Annuleer</Button><Button CommitState="False"/></Buttons></Step><Step enable="True" id="68" name="If" clipID="122346"><Calculation>Get ( LastMessageChoice ) = 1 // bureaublad</Calculation></Step><Step enable="True" id="141" name="Set Variable" clipID="672911"><Value><Calculation>Let(   [ 
+
+	~filename 		= $timestamp &amp; $filenaam;
+	~newpath 		= Get ( DesktopPath )
+] ;  
+	Choose ( Get ( SystemPlatform ) - 1 ; "filemac:" ; "filewin:" )
+		&amp; Substitute ( ~newpath &amp; "/" &amp;  "/" &amp; ~filename ; "//" ;"/" )
+
+)</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$path</Name></Step><Step enable="True" id="37" name="Save a Copy as" clipID="769566"><AutoOpen state="False"/><CreateEmail state="False"/><SaveAsType value="CompactedCopy"/><UniversalPathList>$path</UniversalPathList></Step><Step enable="True" id="68" name="If" clipID="12430"><Calculation>Get( LastError ) ≠ 0</Calculation></Step><Step enable="True" id="87" name="Show Custom Dialog" clipID="435620"><Title><Calculation>"Error"</Calculation></Title><Message><Calculation>"Geen backup gemaakt. Check het script"</Calculation></Message><Buttons><Button CommitState="False">ok</Button><Button CommitState="False"/><Button CommitState="False"/></Buttons></Step><Step enable="True" id="70" name="End If" clipID="950110"/><Step enable="True" id="70" name="End If" clipID="365648"/><Step enable="True" id="70" name="End If" clipID="141812"/><Step enable="True" id="70" name="End If" clipID="730023"/><Step enable="True" id="70" name="End If" clipID="382645"/></Script></fmxmlsnippet></Clipboard><Picture></Picture></FMClipboard>

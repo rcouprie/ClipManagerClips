@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version><![CDATA[42032024]]></Version><Comment></Comment><SourceWindowName></SourceWindowName><Class>XMFN</Class><ClipVersion>1</ClipVersion><ClipTimeStamp>-2.147484e+9</ClipTimeStamp><ClipAuthor></ClipAuthor><clipboardAsText><![CDATA[TranslateDate( myDate;language )]]></clipboardAsText><Clipboard><fmxmlsnippet type="FMObjectList"><CustomFunction id="50" functionArity="2" visible="True" parameters="myDate;language" name="TranslateDate"><Calculation>/*
+Vertaal functie voor myDate 
+van alle talen naar Nederlands
+format: 12 april 2012
+*/
+
+Let ( [ versie 		= "1.1"
+		; lang 	= if ( language = "" ; "nl"; language )
+		; dag 	= Day ( myDate )
+		; maand 	= Choose (   Month 	(  myDate	 ) // end Month
+													 
+								; "error: er is nog geen factuurmyDate"
+								; "januari"
+								;"februari"
+								;"maart"
+								;"april"
+								;"mei"
+								;"juni"
+								;"juli"
+								;"augustus"
+								;"september"
+								;"oktober"
+								;"november"
+								;"december" 
+							) // end Choose
+		; jaar = Year ( myDate )
+
+		; result = dag &amp; " " &amp; maand  &amp; " " &amp; jaar
+		];
+		result
+) // end Let
+</Calculation></CustomFunction></fmxmlsnippet></Clipboard><Picture></Picture></FMClipboard>

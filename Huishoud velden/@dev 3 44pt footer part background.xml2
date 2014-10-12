@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version><![CDATA[42022013]]></Version><Comment></Comment><SourceWindowName><![CDATA[@dev_Studie@Studie (admin | admin)]]></SourceWindowName><Class>XML2</Class><ClipVersion>1</ClipVersion><ClipTimeStamp>3.462881e+9</ClipTimeStamp><ClipAuthor><![CDATA[richard]]></ClipAuthor><clipboardAsText></clipboardAsText><Clipboard><fmxmlsnippet type="LayoutObjectList">
+<Layout enclosingRectTop="112.0000000" enclosingRectLeft="388.0000000" enclosingRectBottom="156.0000000" enclosingRectRight="521.0000000">
+<Object type="Rect" key="20" LabelKey="0" flags="0" rotation="0">
+<Bounds top="112.0000000" left="388.0000000" bottom="156.0000000" right="521.0000000"/>
+<Styles>
+<LocalCSS>
+self
+{
+	background-image: -webkit-gradient(linear,25% 0%,25% 100%, color-stop(0.0285986, rgba(4.639130592%,38.70129013%,10.47503185%,1)), color-stop(0.999798, rgba(0%,71.53614044%,12.21347618%,1)));
+	background-position: 0% 0%;
+	background-size: auto;
+	background-repeat: repeat repeat;
+	background-origin: padding-box;
+	background-clip: border-box;
+	background-color: rgba(0%,0%,0%,0);
+	border-top-color: rgba(0%,0%,0%,0);
+	border-right-color: rgba(0%,0%,0%,0);
+	border-bottom-color: rgba(0%,0%,0%,0);
+	border-left-color: rgba(0%,0%,0%,0);
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: 0pt;
+	border-right-width: 0pt;
+	border-bottom-width: 0pt;
+	border-left-width: 0pt;
+	border-top-right-radius: 0pt 0pt;
+	border-bottom-right-radius: 0pt 0pt;
+	border-bottom-left-radius: 0pt 0pt;
+	border-top-left-radius: 0pt 0pt;
+	border-image-source: none;
+	border-image-slice: 100% 100% 100% 100%;
+	border-image-width: 1 1 1 1;
+	border-image-outset: 0 0 0 0;
+	border-image-repeat: stretch stretch;
+	outline-width: 0pt;
+	outline-style: none;
+	outline-color: invert;
+	outline-offset: 0pt;
+	font-family: -fm-font-family(tahoma,sans-serif,roman);
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-size: 15pt;
+	color: rgba(100%,100%,100%,1);
+	direction: ltr;
+	line-height: 1line;
+	block-progression: tb;
+	text-align: left;
+	text-transform: none;
+	text-indent: 0pt;
+	display: inline;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 0pt;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-bottom: 0pt;
+	margin-left: 0pt;
+	width: auto;
+	height: auto;
+	float: none;
+	clear: none;
+	overflow-x: visible;
+	overflow-y: visible;
+	overflow-style: auto;
+	visibility: visible;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+	position: static;
+	box-shadow: none;
+	box-sizing: content-box;
+	vertical-align: baseline;
+	-fm-digit-set: roman;
+	-fm-space-before: 0line;
+	-fm-space-after: 0line;
+	-fm-strikethrough: false;
+	-fm-underline: none;
+	-fm-paragraph-margin-left: 15pt;
+	-fm-paragraph-margin-right: 0pt;
+	-fm-tab-top-left-radius: 0 0;
+	-fm-tab-top-right-radius: 0 0;
+	-fm-use-default-appearance: false;
+	-fm-icon: none;
+	-fm-icon-color: rgba(0%,0%,0%,1);
+	-fm-tab-spacing: 0;
+	-fm-override-with-classic: false;
+	-fm-table-background-color: rgba(0%,0%,0%,0);
+	-fm-fill-effect: 0;
+	-fm-highlight-color: rgba(0%,0%,0%,0);
+	-fm-portal-alt-background: false;
+	-fm-text-vertical-align: center;
+	-fm-tategaki: false;
+	-fm-borders-between-reps: false;
+	-fm-borders-baseline: false;
+	-fm-body-alt-background: false;
+}
+self .inner_border
+{
+	background-image: none;
+	background-position: 0% 0%;
+	background-size: auto;
+	background-repeat: repeat repeat;
+	background-origin: padding-box;
+	background-clip: border-box;
+	background-color: rgba(0%,0%,0%,0);
+	border-top-color: rgba(0%,0%,0%,0);
+	border-right-color: rgba(0%,0%,0%,0);
+	border-bottom-color: rgba(0%,0%,0%,0);
+	border-left-color: rgba(0%,0%,0%,0);
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: 0pt;
+	border-right-width: 0pt;
+	border-bottom-width: 0pt;
+	border-left-width: 0pt;
+	border-top-right-radius: 0pt 0pt;
+	border-bottom-right-radius: 0pt 0pt;
+	border-bottom-left-radius: 0pt 0pt;
+	border-top-left-radius: 0pt 0pt;
+	border-image-source: none;
+	border-image-slice: 100% 100% 100% 100%;
+	border-image-width: 1 1 1 1;
+	border-image-outset: 0 0 0 0;
+	border-image-repeat: stretch stretch;
+	outline-width: 0pt;
+	outline-style: none;
+	outline-color: invert;
+	outline-offset: 0pt;
+	font-family: -fm-font-family(Helvetica,roman);
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-size: 12pt;
+	color: rgba(0%,0%,0%,1);
+	direction: ltr;
+	line-height: 1line;
+	block-progression: tb;
+	text-align: left;
+	text-transform: none;
+	text-indent: 0pt;
+	display: inline;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 0pt;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-bottom: 0pt;
+	margin-left: 0pt;
+	width: auto;
+	height: auto;
+	float: none;
+	clear: none;
+	overflow-x: visible;
+	overflow-y: visible;
+	overflow-style: auto;
+	visibility: visible;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+	position: static;
+	box-shadow: none;
+	box-sizing: content-box;
+	vertical-align: baseline;
+	-fm-digit-set: roman;
+	-fm-space-before: 0line;
+	-fm-space-after: 0line;
+	-fm-strikethrough: false;
+	-fm-underline: none;
+	-fm-paragraph-margin-left: 0pt;
+	-fm-paragraph-margin-right: 0pt;
+	-fm-tab-top-left-radius: 0 0;
+	-fm-tab-top-right-radius: 0 0;
+	-fm-use-default-appearance: false;
+	-fm-icon: none;
+	-fm-icon-color: rgba(0%,0%,0%,1);
+	-fm-tab-spacing: 0;
+	-fm-override-with-classic: false;
+	-fm-table-background-color: rgba(0%,0%,0%,0);
+	-fm-fill-effect: 0;
+	-fm-highlight-color: rgba(0%,0%,0%,0);
+	-fm-portal-alt-background: false;
+	-fm-text-vertical-align: top;
+	-fm-tategaki: false;
+	-fm-rotation: 0;
+	-fm-borders-between-reps: false;
+	-fm-borders-baseline: false;
+	-fm-body-alt-background: false;
+	-fm-texty-field: false;
+}
+self .text
+{
+	height: 100%;
+	box-sizing: border-box;
+}
+</LocalCSS>
+<FullCSS>
+self
+{
+	background-image: -webkit-gradient(linear,25% 0%,25% 100%, color-stop(0.0285986, rgba(4.639130592%,38.70129013%,10.47503185%,1)), color-stop(0.999798, rgba(0%,71.53614044%,12.21347618%,1)));
+	background-position: 0% 0%;
+	background-size: auto;
+	background-repeat: repeat repeat;
+	background-origin: padding-box;
+	background-clip: border-box;
+	background-color: rgba(0%,0%,0%,0);
+	border-top-color: rgba(0%,0%,0%,0);
+	border-right-color: rgba(0%,0%,0%,0);
+	border-bottom-color: rgba(0%,0%,0%,0);
+	border-left-color: rgba(0%,0%,0%,0);
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: 0pt;
+	border-right-width: 0pt;
+	border-bottom-width: 0pt;
+	border-left-width: 0pt;
+	border-top-right-radius: 0pt 0pt;
+	border-bottom-right-radius: 0pt 0pt;
+	border-bottom-left-radius: 0pt 0pt;
+	border-top-left-radius: 0pt 0pt;
+	border-image-source: none;
+	border-image-slice: 100% 100% 100% 100%;
+	border-image-width: 1 1 1 1;
+	border-image-outset: 0 0 0 0;
+	border-image-repeat: stretch stretch;
+	outline-width: 0pt;
+	outline-style: none;
+	outline-color: invert;
+	outline-offset: 0pt;
+	font-family: -fm-font-family(tahoma,sans-serif,roman);
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-size: 15pt;
+	color: rgba(100%,100%,100%,1);
+	direction: ltr;
+	line-height: 1line;
+	block-progression: tb;
+	text-align: left;
+	text-transform: none;
+	text-indent: 0pt;
+	display: inline;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 0pt;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-bottom: 0pt;
+	margin-left: 0pt;
+	width: auto;
+	height: auto;
+	float: none;
+	clear: none;
+	overflow-x: visible;
+	overflow-y: visible;
+	overflow-style: auto;
+	visibility: visible;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+	position: static;
+	box-shadow: none;
+	box-sizing: content-box;
+	vertical-align: baseline;
+	-fm-digit-set: roman;
+	-fm-space-before: 0line;
+	-fm-space-after: 0line;
+	-fm-tab-stops: ;
+	-fm-strikethrough: false;
+	-fm-underline: none;
+	-fm-glyph-variant: ;
+	-fm-paragraph-margin-left: 15pt;
+	-fm-paragraph-margin-right: 0pt;
+	-fm-character-direction: ;
+	-fm-tab-top-left-radius: 0 0;
+	-fm-tab-top-right-radius: 0 0;
+	-fm-use-default-appearance: false;
+	-fm-icon: none;
+	-fm-icon-color: rgba(0%,0%,0%,1);
+	-fm-tab-spacing: 0;
+	-fm-override-with-classic: true;
+	-fm-table-background-color: rgba(0%,0%,0%,0);
+	-fm-fill-effect: 0;
+	-fm-highlight-color: rgba(0%,0%,0%,0);
+	-fm-portal-alt-background: false;
+	-fm-text-vertical-align: center;
+	-fm-tategaki: false;
+	-fm-rotation: 0;
+	-fm-borders-between-reps: false;
+	-fm-borders-baseline: false;
+	-fm-body-alt-background: false;
+	-fm-texty-field: false;
+}
+self .inner_border
+{
+	background-image: none;
+	background-position: 0% 0%;
+	background-size: auto;
+	background-repeat: repeat repeat;
+	background-origin: padding-box;
+	background-clip: border-box;
+	background-color: rgba(0%,0%,0%,0);
+	border-top-color: rgba(0%,0%,0%,0);
+	border-right-color: rgba(0%,0%,0%,0);
+	border-bottom-color: rgba(0%,0%,0%,0);
+	border-left-color: rgba(0%,0%,0%,0);
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: 0pt;
+	border-right-width: 0pt;
+	border-bottom-width: 0pt;
+	border-left-width: 0pt;
+	border-top-right-radius: 0pt 0pt;
+	border-bottom-right-radius: 0pt 0pt;
+	border-bottom-left-radius: 0pt 0pt;
+	border-top-left-radius: 0pt 0pt;
+	border-image-source: none;
+	border-image-slice: 100% 100% 100% 100%;
+	border-image-width: 1 1 1 1;
+	border-image-outset: 0 0 0 0;
+	border-image-repeat: stretch stretch;
+	outline-width: 0pt;
+	outline-style: none;
+	outline-color: invert;
+	outline-offset: 0pt;
+	font-family: -fm-font-family(Helvetica,roman);
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-size: 12pt;
+	color: rgba(0%,0%,0%,1);
+	direction: ltr;
+	line-height: 1line;
+	block-progression: tb;
+	text-align: left;
+	text-transform: none;
+	text-indent: 0pt;
+	display: inline;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 0pt;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-bottom: 0pt;
+	margin-left: 0pt;
+	width: auto;
+	height: auto;
+	float: none;
+	clear: none;
+	overflow-x: visible;
+	overflow-y: visible;
+	overflow-style: auto;
+	visibility: visible;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+	position: static;
+	box-shadow: none;
+	box-sizing: content-box;
+	vertical-align: baseline;
+	-fm-digit-set: roman;
+	-fm-space-before: 0line;
+	-fm-space-after: 0line;
+	-fm-tab-stops: ;
+	-fm-strikethrough: false;
+	-fm-underline: none;
+	-fm-glyph-variant: ;
+	-fm-paragraph-margin-left: 0pt;
+	-fm-paragraph-margin-right: 0pt;
+	-fm-character-direction: ;
+	-fm-tab-top-left-radius: 0 0;
+	-fm-tab-top-right-radius: 0 0;
+	-fm-use-default-appearance: false;
+	-fm-icon: none;
+	-fm-icon-color: rgba(0%,0%,0%,1);
+	-fm-tab-spacing: 0;
+	-fm-override-with-classic: false;
+	-fm-table-background-color: rgba(0%,0%,0%,0);
+	-fm-fill-effect: 0;
+	-fm-highlight-color: rgba(0%,0%,0%,0);
+	-fm-portal-alt-background: false;
+	-fm-text-vertical-align: top;
+	-fm-tategaki: false;
+	-fm-rotation: 0;
+	-fm-borders-between-reps: false;
+	-fm-borders-baseline: false;
+	-fm-body-alt-background: false;
+	-fm-texty-field: false;
+}
+self .text
+{
+	height: 100%;
+	box-sizing: border-box;
+}
+</FullCSS>
+<ThemeName>com.filemaker.theme.classic</ThemeName></Styles>
+</Object>
+</Layout></fmxmlsnippet></Clipboard><Picture>iVBORw0KGgoAAAANSUhEUgAAAhQAAACwCAIAAADYCmBjAAAABGdBTUEAANkDQtZPoQAAAAlwSFlz
+AAALEwAACxMBAJqcGAAAACR0RVh0U29mdHdhcmUAUXVpY2tUaW1lIDcuNy4xIChNYWMgT1MgWCkA
+ZAOCGAAAAAd0SU1FB90JGA0SBfqPr18AAAR0SURBVHic7d1RbttGAEVRUxH6FXQDBbqJLClr6082
+yRouVEimqPBGpCk550AwJJrkPH8N3kyoDF+///UCAMVh7wAAPB+TBwCZyQOAzOQBQGbyACA7vgx7
+RwDg2WgeAGSaBwDZYTy9G08/373+/9U75+efn7Pk+Nz9566t48ovv/zyy79p/i9/fPvz2q8AYJZl
+KwAyG+YAZJoHAJnmAUCmeQCQaR4AZJoHAJnmAUCmeQCQaR4AZJoHAJnmAUCmeQCQHa9+3S4A3KB5
+AJDZ8wAg0zwAyDQPADLNA4BM8wAg0zwAyDQPADLNA4BM8wAge20eqgcAjeYBQGbPA4BM8wAgO46a
+BwCR5gFAZvIAILNhDkCmeQCQaR4AZCYPADLLVgBkmgcAmeYBQDYzeQynn8PZxzttcc+PHEv+fceS
+f9+x5N93rMfLP79sNVy+WfHvX/eeHzmW/PuOJf++Y8m/71gPlt+yFQCZDXMAsuO4dwIAno7mAUBm
+zwOATPMAIDN5AJBZtgIgM3kAkFm2AiDTPADINA8AMs0DgEzzACDTPADINA8AMs0DgOw4ah4ARJoH
+AJk9DwAyzQOATPMAINM8AMhem4fqAUCjeQCQ2fMAINM8AMg0DwAyzQOAzOQBQGbZCoDMt+oCkFm2
+AiCzbAVApnkAkGkeAGSaBwCZ5gFApnkAkJk8AMgsWwGQaR4AZJoHAJnJA4DMshUAmW/VBSDTPADI
+7HkAkGkeAGQmDwAyy1YAZJoHAJnmAUCmeQCQaR4AZJoHAJnmAUBm8gAgs2wFQGbyACDzlewAZK/N
+I80ew+nncPbxxvF77jl3zvlrrbHkl/+eseSX/56xnjL/fxvmv3D9y8zfPz1+zz2vnjM9KP/CDPWe
+V8+ZHpR/YYZ6z6vnTA/KvzBDvefVc6YHf9P89jwAyPxTXQAyzQOATPMAINM8AMg0DwAyzQOATPMA
+INM8AMg0DwAyzQOAzLfqApBpHgBk9jwAyDQPALLDtv93yNw95+6zxTnyb5dtyTnyb5dtyTnyb5dt
+yTmfN//xJ9fP3fTXDJdvbo+71jnTg/LLv/yc6UH55V9+zvTgZ8lv2QqAzIY5AJnJA4DMshUAmeYB
+QKZ5AJBpHgBkmgcA2eHKAyPvnhxZ8kTiubXuM3fP89eS+8svv/zyy792/uHwz98lBQBYtgKgs2EO
+QKZ5AJBpHgBkJg8AMstWAGSaBwCZ5gFA9jZ53H5qsT55uMUTlfWpSPnll19++bfMPxx+eMIcgOa4
+YGoDgAs2zAHIbJgDkD1W8xjfFtHGt/fD6eON449G/n3Jvy/59/XB+Y/jGndZ0Xj5ZvzZ8Ucj/77k
+35f8+/rI/I/VPAB4CiYPADIb5gBkZ5PHWk88nlvracl7xpJf/nvGkl/+e8b6vPkvl62mF9w+vjzT
+8mu3GEv+5dfKP71W/uXXyj+99pPmt2wFQGbDHIBM8wAg0zwAyDQPADLNA4BM8wAg0zwAyB7uW3UB
+eHyaBwCZPQ8AMs0DgEzzACDTPADINA8Asn8Bhkl8s/5/qrsAAAAASUVORK5CYII=</Picture></FMClipboard>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version><![CDATA[42042060]]></Version><Comment></Comment><SourceWindowName></SourceWindowName><Class>XMFN</Class><ClipVersion>1</ClipVersion><ClipTimeStamp>3.467978e+9</ClipTimeStamp><ClipAuthor></ClipAuthor><clipboardAsText><![CDATA[GetMap( webViewerName;zoom;address1;address2;city;state;postalCode;country )]]></clipboardAsText><Clipboard><fmxmlsnippet type="FMObjectList"><CustomFunction id="1" functionArity="8" visible="True" parameters="webViewerName;zoom;address1;address2;city;state;postalCode;country" name="GetMap"><Calculation>Let 	( 
+	[
+	address = 	Substitute 	( 
+							address1 &amp; " " &amp; 
+							address2 &amp; " " &amp; 
+							city &amp; " " &amp; 
+							state &amp; " " &amp; 
+							postalCode &amp; " " &amp; 
+							country ; 
+							" " ; "+" 
+							) ; 
+	size = 		GetLayoutObjectAttribute ( webViewerName ; "width" ) &amp; "x" &amp; GetLayoutObjectAttribute ( webViewerName ; "height" )
+	] ;
+
+	"http://maps.google.com/maps/api/staticmap?center=" 
+			&amp; address &amp; 
+				"&amp;zoom=" &amp; zoom &amp;
+					"&amp;markers=" 
+						&amp; address &amp; 
+							"&amp;size=" 
+								&amp; size &amp; 
+									"&amp;sensor=false"
+	)</Calculation></CustomFunction></fmxmlsnippet></Clipboard><Picture></Picture></FMClipboard>

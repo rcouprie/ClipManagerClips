@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version><![CDATA[42042060]]></Version><Comment></Comment><SourceWindowName></SourceWindowName><Class>XMFN</Class><ClipVersion>1</ClipVersion><ClipTimeStamp>3.467978e+9</ClipTimeStamp><ClipAuthor></ClipAuthor><clipboardAsText><![CDATA[GetInsideChunk( xml;partName;occurance )]]></clipboardAsText><Clipboard><fmxmlsnippet type="FMObjectList"><CustomFunction id="3" functionArity="3" visible="True" parameters="xml;partName;occurance" name="GetInsideChunk"><Calculation>Let	(
+	 [
+    	endPhrase 	= "\"types\" : [ \"" &amp; partName &amp; "\"" ;
+    	endPosition 	= Position ( xml; endPhrase ; 1; occurance ) ;
+    	startPhrase 	= "{" ;
+    	startPosition 	= Position ( xml ; startPhrase ; endPosition ; -1 ) + Length ( startPhrase )
+ 	] ;
+
+   	Middle ( xml ; startPosition ; endPosition - startPosition )
+	)</Calculation></CustomFunction></fmxmlsnippet></Clipboard><Picture></Picture></FMClipboard>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version><![CDATA[42042060]]></Version><Comment></Comment><SourceWindowName></SourceWindowName><Class>XMFN</Class><ClipVersion>1</ClipVersion><ClipTimeStamp>3.467978e+9</ClipTimeStamp><ClipAuthor></ClipAuthor><clipboardAsText><![CDATA[GetXMLValue( xml;valueName;occurance )]]></clipboardAsText><Clipboard><fmxmlsnippet type="FMObjectList"><CustomFunction id="4" functionArity="3" visible="True" parameters="xml;valueName;occurance" name="GetXMLValue"><Calculation>Let 	(
+ 	[
+    	startPhrase 	=  "\"" &amp; valueName &amp; "\" :" ;
+   	startPosition 	= Position ( xml ; startPhrase ; 1; occurance ) + Length ( startPhrase ) +2 ;
+    	endPosition 	= Position ( xml ; ¶ ; startPosition; occurance ) - 2
+	 ] ;
+
+	Middle ( xml ; startPosition ; endPosition - startPosition )
+
+
+	)</Calculation></CustomFunction></fmxmlsnippet></Clipboard><Picture></Picture></FMClipboard>

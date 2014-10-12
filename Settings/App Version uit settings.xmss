@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version><![CDATA[42052142]]></Version><Comment></Comment><SourceWindowName></SourceWindowName><Class>XMSS</Class><ClipVersion>1</ClipVersion><ClipTimeStamp>3.480507e+9</ClipTimeStamp><ClipAuthor><![CDATA[filemaker]]></ClipAuthor><clipboardAsText><![CDATA[Set Variable [$$@APP.VERSION; Value:Let ([ 
+	version = "1 | 12-03-2014  |  versie uit Settings"
+	; _queryTable	= Quote ( TableName ( Setting::id) )
+	; _queryVeld	= Quote ( FieldName ( Setting::waarde ) )
+	; _whereField	= Quote ( FieldName ( Setting::naam ) )
+	; _whereValue1 = "versie"
+	; result = sql.debug ( 
+			ExecuteSQL ( "SELECT " & _queryVeld & " FROM " &  _queryTable  & " WHERE " & _whereField & "=?"  ; "" ; "" ; _whereValue1 ) )
+
+];
+	result
+)]]]></clipboardAsText><Clipboard><fmxmlsnippet type="FMObjectList"><Step enable="True" id="141" name="Set Variable"><Value><Calculation>Let ([ 
+	version = "1 | 12-03-2014  |  versie uit Settings"
+	; _queryTable	= Quote ( TableName ( Setting::id) )
+	; _queryVeld	= Quote ( FieldName ( Setting::waarde ) )
+	; _whereField	= Quote ( FieldName ( Setting::naam ) )
+	; _whereValue1 = "versie"
+	; result = sql.debug ( 
+			ExecuteSQL ( "SELECT " &amp; _queryVeld &amp; " FROM " &amp;  _queryTable  &amp; " WHERE " &amp; _whereField &amp; "=?"  ; "" ; "" ; _whereValue1 ) )
+
+];
+	result
+)</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$$@APP.VERSION</Name></Step></fmxmlsnippet></Clipboard><Picture></Picture></FMClipboard>

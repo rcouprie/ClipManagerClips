@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version><![CDATA[42042060]]></Version><Comment></Comment><SourceWindowName></SourceWindowName><Class>XMFN</Class><ClipVersion>1</ClipVersion><ClipTimeStamp>-2.147484e+9</ClipTimeStamp><ClipAuthor></ClipAuthor><clipboardAsText><![CDATA[isMac(  )]]></clipboardAsText><Clipboard><fmxmlsnippet type="FMObjectList"><CustomFunction id="62" functionArity="0" visible="True" parameters="" name="isMac"><Calculation>/**
+ * =====================================
+ * isMac ( )
+ *
+ * RETURNS:
+ *		True or Flase
+ *
+ * PARAMETERS:
+ *		n.a. *
+ * EXAMPLE:
+ *		if  ( isMac )
+ *
+ * DEPENDENCIES: none
+ *
+ * HISTORY:
+ *		MODIFIED on ... by ...
+ *		CREATED on 01-1-2013 by Richard Couprie
+ * =====================================
+ */
+
+Abs ( Get ( SystemPlatform ) ) = 1</Calculation></CustomFunction></fmxmlsnippet></Clipboard><Picture></Picture></FMClipboard>

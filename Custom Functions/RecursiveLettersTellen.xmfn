@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version><![CDATA[42052142]]></Version><Comment></Comment><SourceWindowName></SourceWindowName><Class>XMFN</Class><ClipVersion>1</ClipVersion><ClipTimeStamp>3.475836e+9</ClipTimeStamp><ClipAuthor></ClipAuthor><clipboardAsText><![CDATA[RecursiveLettersTellen( letters )]]></clipboardAsText><Clipboard><fmxmlsnippet type="FMObjectList"><CustomFunction id="50" functionArity="1" visible="True" parameters="letters" name="RecursiveLettersTellen"><Calculation>Case (   not IsEmpty ( letters )
+		; Let (   newLetters = Left ( letters ; Length ( letters ) - 1 )  
+			;
+			Case ( Length ( newLetters )  &gt; 0
+				; RecursiveLettersTellen ( newLetters ) + 1 
+				; +1
+				) 
+				// end case 
+		 ) 
+		// end Let 
+) // end Case
+</Calculation></CustomFunction></fmxmlsnippet></Clipboard><Picture></Picture></FMClipboard>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version><![CDATA[42042060]]></Version><Comment></Comment><SourceWindowName><![CDATA[Manage Custom Functions for “Contractonderwijs”]]></SourceWindowName><Class>XMFN</Class><ClipVersion>1</ClipVersion><ClipTimeStamp>3.470140e+9</ClipTimeStamp><ClipAuthor><![CDATA[filemaker]]></ClipAuthor><clipboardAsText><![CDATA[RecordStatus(  )]]></clipboardAsText><Clipboard><fmxmlsnippet type="FMObjectList"><CustomFunction id="61" functionArity="0" visible="True" parameters="" name="RecordStatus"><Calculation>Case ( 
+Get ( RecordOpenState ) = 0 ; List ( 0 ; "closed or committed record")
+; Get ( RecordOpenState ) = 1 ; List ( 1 ;  "new record that hasn’t been committed")
+; Get ( RecordOpenState ) = 2 ; List ( 2 ; "modified record that hasn’t been committed")
+)</Calculation></CustomFunction></fmxmlsnippet></Clipboard><Picture></Picture></FMClipboard>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version><![CDATA[42042060]]></Version><Comment></Comment><SourceWindowName><![CDATA[Clip Manager]]></SourceWindowName><Class>XMFN</Class><ClipVersion>1</ClipVersion><ClipTimeStamp>-2.147484e+9</ClipTimeStamp><ClipAuthor><![CDATA[filemaker]]></ClipAuthor><clipboardAsText><![CDATA[KeyboardModifiers( keysList;ignoreCaps )]]></clipboardAsText><Clipboard><fmxmlsnippet type="FMObjectList"><CustomFunction id="6" functionArity="2" visible="True" parameters="keysList;ignoreCaps" name="KeyboardModifiers"><Calculation>/**
+ * =====================================================
+ * KeyboardModifiers ( keysList ; ignoreCaps )
+ *
+ * PURPOSE:
+ *		Trap for human readable list of
+ *		modifier keys being held down.
+ *
+ * PARAMETERS:
+ *		keysList (enumeration) List() of "keys" or string
+ *			(e.g. List("Command"; "Alt") or "command-alt")
+ *		ignoreCaps (boolean) True or False to ignore caps key
+ *
+ * RETURNS:
+ *		(boolean) based on modifier keys being held down
+ *
+ * DEPENDENCIES:
+ *		none
+ *
+ * EXAMPLE:
+ *		If [KeyboardModifiers ( "command-shift" ; True )]
+ *			# Perform steps here
+ *		End If
+ *
+ * RELEASE: 2010-10-14
+ *		2013-07-02 Updated to proper filemakerstandards.org style guide
+ *
+ * NOTES:
+ *		Adapted from http://www.briandunning.com/cf/473
+ *		by Peter Wagemans, SHpartners
+ * =====================================================
+ * 
+ */
+
+Let ( [
+	// Get the modifier keys
+	
+	~keys = Get ( ActiveModifierKeys );
+
+	// Convert keys to their bit values (see note at bottom)
+	
+	~command  = Mod ( Int ( ~keys / 16 ) ; 2 );
+	~alt      = Mod ( Int ( ~keys / 8 ) ; 2 );
+	~control  = Mod ( Int ( ~keys / 4 ) ; 2 );
+	~capslock = Mod ( Int ( ~keys / 2 ) ; 2 );
+	~shift    = Mod ( ~keys ; 2 )
+
+];
+	// Result (boolean)
+	
+	( ~command xor not PatternCount ( keysList ; "command" ) )
+	and
+	( ~alt xor not ( PatternCount ( keysList ; "alt" ) or PatternCount ( keysList ; "option" ) ) )
+	and
+	( ~control xor not ( PatternCount ( keysList ; "ctrl" ) or PatternCount ( keysList ; "control") ) )
+	and
+	If ( not ignoreCaps ;
+		( ~capslock xor not PatternCount ( keysList ; "capslock" ) ) ;
+		True
+	)
+	and
+	( ~shift xor not PatternCount ( keysList ; "shift" ) )
+	and
+	( ( ~keys = 0 ) xor ( keysList ≠ "" ) )
+)
+
+/*
+	The Mod() function is used to determine
+	if the key is within the result of
+	Get ( ActiveModifierKeys )
+
+	16  8  4  2  1
+	--------------
+	0   0  1  0  1
+	|    |   |   |   |
+	|    |   |   |   Shift
+	|    |   |   Caps Lock
+	|    |   Ctrl
+	|   Alt/Option
+	Apple Command Key
+*/</Calculation></CustomFunction></fmxmlsnippet></Clipboard><Picture></Picture></FMClipboard>

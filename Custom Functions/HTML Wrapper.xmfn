@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version><![CDATA[42052142]]></Version><Comment></Comment><SourceWindowName><![CDATA[Manage Custom Functions for “CertificationStudy”]]></SourceWindowName><Class>XMFN</Class><ClipVersion>1</ClipVersion><ClipTimeStamp>-2.147484e+9</ClipTimeStamp><ClipAuthor><![CDATA[richard]]></ClipAuthor><clipboardAsText><![CDATA[HTML( content )]]></clipboardAsText><Clipboard><fmxmlsnippet type="FMObjectList"><CustomFunction id="11" functionArity="1" visible="True" parameters="content" name="HTML"><Calculation>/*
+ *  Default HTML wrapper content for messages within central web viewer
+ */
+
+"data:text/html," &amp;
+List (
+	"&lt;html&gt;";
+	"&lt;head&gt;";
+	"&lt;style type=\"text/css\"&gt;";
+	//"*{border: 1 solid black; }";
+	"body { margin: 0 auto; text-align: center; font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif; font-size: 24px; color: gray;}";
+	"div {position: relative; top: 35%; width: 650px; margin: 0 auto;}";
+	"ul{list-style-type: none; width: 50%; margin: 0 auto; padding: 0 0 0 20px;}";
+	"li {font-size: 0.6em; color:rgb(200,200,200); text-align: left;}";
+	"&lt;/style&gt;";
+	"&lt;/head&gt;";
+	"&lt;body&gt;";
+	"&lt;div&gt;";
+	content;
+	"&lt;/div&gt;";
+	"&lt;/body&gt;";
+	"&lt;/html&gt;";
+)</Calculation></CustomFunction></fmxmlsnippet></Clipboard><Picture></Picture></FMClipboard>

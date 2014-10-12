@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version><![CDATA[42052142]]></Version><Comment></Comment><SourceWindowName></SourceWindowName><Class>XMSS</Class><ClipVersion>1</ClipVersion><ClipTimeStamp>3.482409e+9</ClipTimeStamp><ClipAuthor><![CDATA[filemaker]]></ClipAuthor><clipboardAsText><![CDATA[#  Show Custom Dialog FM13 v2Set Variable [$!; Value:Let ( [	$title= "titel"
+		; $message= "bericht"
+		; $button1 = "ok"
+		; $button2 = "annuleren"
+		; $button3 = ""
+	]; "hello world"
+)]Show Custom Dialog [$title; $message]If [1=0 // Get (LastMessageChoice ) = 1]Else If [Get (LastMessageChoice ) = 1]	#Else If [Get (LastMessageChoice ) = 2]	#Else If [Get (LastMessageChoice ) = 3]	#Else	#End IfEnd If]]></clipboardAsText><Clipboard><fmxmlsnippet type="FMObjectList"><Step enable="True" id="89" name="Comment"><Text>  Show Custom Dialog FM13 v2</Text></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>Let ( [	$title= "titel"
+		; $message= "bericht"
+		; $button1 = "ok"
+		; $button2 = "annuleren"
+		; $button3 = ""
+	]; "hello world"
+)</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$!</Name></Step><Step enable="True" id="87" name="Show Custom Dialog"><Title><Calculation>$title</Calculation></Title><Message><Calculation>$message</Calculation></Message><Buttons><Button CommitState="True"><Calculation>$button1</Calculation></Button><Button CommitState="False"><Calculation>$button2</Calculation></Button><Button CommitState="False"><Calculation>$button3</Calculation></Button></Buttons></Step><Step enable="True" id="68" name="If"><Calculation>1=0 // Get (LastMessageChoice ) = 1</Calculation></Step><Step enable="True" id="125" name="Else If"><Calculation>Get (LastMessageChoice ) = 1</Calculation></Step><Step enable="True" id="89" name="Comment"/><Step enable="True" id="125" name="Else If"><Calculation>Get (LastMessageChoice ) = 2</Calculation></Step><Step enable="True" id="89" name="Comment"/><Step enable="True" id="125" name="Else If"><Calculation>Get (LastMessageChoice ) = 3</Calculation></Step><Step enable="True" id="89" name="Comment"/><Step enable="True" id="69" name="Else"/><Step enable="True" id="89" name="Comment"/><Step enable="True" id="70" name="End If"/><Step enable="True" id="70" name="End If"/></fmxmlsnippet></Clipboard><Picture></Picture></FMClipboard>

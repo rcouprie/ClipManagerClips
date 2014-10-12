@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version><![CDATA[42052142]]></Version><Comment></Comment><SourceWindowName></SourceWindowName><Class>XMFN</Class><ClipVersion>1</ClipVersion><ClipTimeStamp>-2.147484e+9</ClipTimeStamp><ClipAuthor><![CDATA[filemaker]]></ClipAuthor><clipboardAsText><![CDATA[HTML( content )HTML Base64Image( _base64 )HTML Bootstrap( jumbotron;lead;contenth2;navActive;nav2;nav2URL;mastheadMuted;fluidspan12H2;fluidspan12Content;fluidspan6H4;fluidspan6Content;footer;contenth4;DynamicSidebar )]]></clipboardAsText><Clipboard><fmxmlsnippet type="FMObjectList"><CustomFunction id="48" functionArity="1" visible="True" parameters="content" name="HTML"><Calculation>/*
+ *  Default HTML wrapper content for messages within central web viewer
+ */
+
+
+List( "data:text/html,"
+; "&lt;html&gt;"
+; "	&lt;head&gt;"
+; "		&lt;style type=\"text/css\"&gt;"
+; "			body { "
+; "				margin: 0 auto; "
+; "				text-align: center; "
+; "				font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif; "
+; "				font-size: 24px; "
+; "				color: gray;}"
+; "			div {"
+; "				position: relative; "
+; "				text-align: center; "
+; "				// top: 35%; "
+; "				// width: 650px; "
+; "				margin: 0 auto;}"
+; "			ul{"
+; "				list-style-type: none; "
+; "				width: 50%; "
+; "				margin: 0 auto; "
+; "				padding: 0 0 0 20px;}"
+; "			li {"
+; "				font-size: 0.6em; "
+; "				color:rgb(200,200,200); "
+; "				text-align: left;}"
+; "		&lt;/style&gt;"
+; "	&lt;/head&gt;"
+; "&lt;body&gt;"
+; "&lt;div&gt;"
+; 	content
+; "&lt;/div&gt;"
+; "&lt;/body&gt;"
+; "&lt;/html&gt;"
+)
+
+/*
+List (
+	"&lt;html&gt;";
+	"&lt;head&gt;";
+	"&lt;style type=\"text/css\"&gt;";
+	//"*{border: 1 solid black; }";
+	"body { margin: 0 auto; text-align: center; font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif; font-size: 24px; color: gray;}";
+	"div {position: relative; top: 35%; width: 650px; margin: 0 auto;}";
+	"ul{list-style-type: none; width: 50%; margin: 0 auto; padding: 0 0 0 20px;}";
+	"li {font-size: 0.6em; color:rgb(200,200,200); text-align: left;}";
+	"&lt;/style&gt;";
+	"&lt;/head&gt;";
+	"&lt;body&gt;";
+	"&lt;div&gt;";
+	content;
+
+	"&lt;/div&gt;";
+	"&lt;/body&gt;";
+	"&lt;/html&gt;";
+)
+*/</Calculation></CustomFunction><CustomFunction id="77" functionArity="1" visible="True" parameters="_base64" name="HTML Base64Image"><Calculation>
+
+
+"&lt;img alt=\"Loading spinner\" src=\"data:image/gif;base64," &amp; _base64 &amp; "\" /&gt;"</Calculation></CustomFunction><CustomFunction id="53" functionArity="14" visible="True" parameters="jumbotron;lead;contenth2;navActive;nav2;nav2URL;mastheadMuted;fluidspan12H2;fluidspan12Content;fluidspan6H4;fluidspan6Content;footer;contenth4;DynamicSidebar" name="HTML Bootstrap"><Calculation>// Load Welcome HTML
+// Replace link references with Global Variable content
+// If ( IsEmpty ( $$HTML.WELCOME )  ;
+
+"data:text/html," &amp; "&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;&lt;/title&gt;
+	&lt;meta charset=\"UTF-8\"&gt;
+	&lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt;
+	&lt;style&gt;" &amp; $$CSS.BOOTSTRAP &amp; "&lt;/style&gt;
+  &lt;style&gt;" &amp; $$CSS.BOOTSTRAP.R &amp; "&lt;/style&gt;
+&lt;/head&gt;
+&lt;style type=\"text/css\"&gt;
+body {
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+
+    /* Custom container */
+    .container-narrow {
+      margin: 0 auto;
+      max-width: 700px;
+    }
+    .container-narrow &gt; hr {
+      margin: 30px 0;
+    }
+    .footer {
+      margin: 10px 0;
+      text-align: center;
+    }
+    /* Main marketing message and sign up button */
+    .jumbotron {
+      margin: 60px 0;
+      text-align: center;
+    }
+    .jumbotron h1 {
+      font-size: 64px;
+      line-height: 1;
+    }
+    .jumbotron .btn {
+      font-size: 21px;
+      padding: 14px 24px;
+    }
+
+    /* Supporting marketing content */
+    .marketing {
+      margin: 60px 0;
+    }
+    .marketing p + h4 {
+      margin-top: 28px;
+    }
+&lt;/style&gt;
+&lt;script&gt;document.write('&lt;script src=\"http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1\"&gt;&lt;/' + 'script&gt;')&lt;/script&gt;
+
+&lt;body&gt;
+&lt;div class=\"container-narrow\"&gt;
+"
+&amp; 
+If ( IsEmpty ( mastheadMuted ) ; "" ;
+
+      "&lt;div class=\"masthead\"&gt;
+        &lt;ul class=\"nav nav-pills pull-right\"&gt;
+          &lt;li class=\"active\"&gt;&lt;a href=\"#\"&gt;" &amp; navActive &amp; "&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=\"" &amp; nav2URL &amp; "\"&gt;" &amp; nav2 &amp; "&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;h3 class=\"muted\"&gt;" &amp; mastheadMuted &amp; "&lt;/h3&gt;
+      &lt;/div&gt;
+
+      &lt;hr&gt;"
+)
+&amp;
+
+      "&lt;div class=\"jumbotron\"&gt;
+        &lt;h1&gt;" 
+&amp; jumbotron
+&amp; "&lt;/h1&gt;
+        &lt;p class=\"lead\"&gt;"
+&amp; lead &amp; 
+"&lt;/p&gt;
+      &lt;/div&gt;"
+&amp;
+If ( IsEmpty ( jumbotron ) ; "" ;
+      "&lt;hr&gt;"
+)
+&amp;
+
+      "&lt;h2&gt;"
+ &amp; contentH2  &amp; 
+"&lt;/h2&gt;
+            &lt;h4&gt;" &amp; contenth4 &amp; "&lt;/h4&gt;
+            
+      &lt;div class=\"row-fluid\"&gt;
+        &lt;div class=\"span12\"&gt;
+          &lt;h2&gt;" &amp; fluidspan12H2 &amp; "&lt;/h2&gt;
+          &lt;p&gt;" &amp; fluidspan12Content &amp; "&lt;/p&gt;
+          
+          &lt;div class=\"row-fluid\"&gt;
+          &lt;div class=\"span6\"&gt;
+            &lt;h4&gt;" &amp; fluidspan6H4 &amp; "&lt;/h4&gt;
+          &lt;p&gt;" &amp; fluidspan6Content &amp; "&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+
+      
+
+      &lt;div class=\"footer \"&gt;
+        " &amp; footer &amp; "&lt;p&gt;" &amp; $$MYZET &amp; "&lt;/p&gt;
+        &lt;p&gt;website: &lt;a href=\"http://www.myzet.nl\"&gt;Myzet website&lt;/a&gt; &lt;/p&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+  &lt;script&gt;" &amp; $$JS.JQUERY &amp; "&lt;/script&gt;
+  &lt;script&gt;" &amp; $$JS.BOOTSTRAP &amp; "&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+"</Calculation></CustomFunction></fmxmlsnippet></Clipboard><Picture></Picture></FMClipboard>

@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version><![CDATA[42022013]]></Version><Comment></Comment><SourceWindowName><![CDATA[@dev_Studie@Studie (admin | admin)]]></SourceWindowName><Class>XML2</Class><ClipVersion>1</ClipVersion><ClipTimeStamp>3.462881e+9</ClipTimeStamp><ClipAuthor><![CDATA[richard]]></ClipAuthor><clipboardAsText></clipboardAsText><Clipboard><fmxmlsnippet type="LayoutObjectList">
+<Layout enclosingRectTop="112.0000000" enclosingRectLeft="387.0000000" enclosingRectBottom="156.0000000" enclosingRectRight="520.0000000">
+<Object type="Rect" key="20" LabelKey="0" flags="0" rotation="0">
+<Bounds top="112.0000000" left="387.0000000" bottom="156.0000000" right="520.0000000"/>
+<Styles>
+<LocalCSS>
+self
+{
+	background-image: -webkit-gradient(linear,25% 0%,25% 100%, from(rgba(0%,71.53614044%,12.21347618%,1)), to(rgba(4.639130592%,38.70129013%,10.47503185%,1)));
+	background-position: 0% 0%;
+	background-size: auto;
+	background-repeat: repeat repeat;
+	background-origin: padding-box;
+	background-clip: border-box;
+	background-color: rgba(0%,0%,0%,0);
+	border-top-color: rgba(0%,0%,0%,0);
+	border-right-color: rgba(0%,0%,0%,0);
+	border-bottom-color: rgba(0%,0%,0%,0);
+	border-left-color: rgba(0%,0%,0%,0);
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: 0pt;
+	border-right-width: 0pt;
+	border-bottom-width: 0pt;
+	border-left-width: 0pt;
+	border-top-right-radius: 0pt 0pt;
+	border-bottom-right-radius: 0pt 0pt;
+	border-bottom-left-radius: 0pt 0pt;
+	border-top-left-radius: 0pt 0pt;
+	border-image-source: none;
+	border-image-slice: 100% 100% 100% 100%;
+	border-image-width: 1 1 1 1;
+	border-image-outset: 0 0 0 0;
+	border-image-repeat: stretch stretch;
+	outline-width: 0pt;
+	outline-style: none;
+	outline-color: invert;
+	outline-offset: 0pt;
+	font-family: -fm-font-family(tahoma,sans-serif,roman);
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-size: 15pt;
+	color: rgba(100%,100%,100%,1);
+	direction: ltr;
+	line-height: 1line;
+	block-progression: tb;
+	text-align: left;
+	text-transform: none;
+	text-indent: 0pt;
+	display: inline;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 0pt;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-bottom: 0pt;
+	margin-left: 0pt;
+	width: auto;
+	height: auto;
+	float: none;
+	clear: none;
+	overflow-x: visible;
+	overflow-y: visible;
+	overflow-style: auto;
+	visibility: visible;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+	position: static;
+	box-shadow: none;
+	box-sizing: content-box;
+	vertical-align: baseline;
+	-fm-digit-set: roman;
+	-fm-space-before: 0line;
+	-fm-space-after: 0line;
+	-fm-strikethrough: false;
+	-fm-underline: none;
+	-fm-paragraph-margin-left: 15pt;
+	-fm-paragraph-margin-right: 0pt;
+	-fm-tab-top-left-radius: 0 0;
+	-fm-tab-top-right-radius: 0 0;
+	-fm-use-default-appearance: false;
+	-fm-icon: none;
+	-fm-icon-color: rgba(0%,0%,0%,1);
+	-fm-tab-spacing: 0;
+	-fm-override-with-classic: false;
+	-fm-table-background-color: rgba(0%,0%,0%,0);
+	-fm-fill-effect: 0;
+	-fm-highlight-color: rgba(0%,0%,0%,0);
+	-fm-portal-alt-background: false;
+	-fm-text-vertical-align: center;
+	-fm-tategaki: false;
+	-fm-borders-between-reps: false;
+	-fm-borders-baseline: false;
+	-fm-body-alt-background: false;
+}
+self .inner_border
+{
+	background-image: none;
+	background-position: 0% 0%;
+	background-size: auto;
+	background-repeat: repeat repeat;
+	background-origin: padding-box;
+	background-clip: border-box;
+	background-color: rgba(0%,0%,0%,0);
+	border-top-color: rgba(0%,0%,0%,0);
+	border-right-color: rgba(0%,0%,0%,0);
+	border-bottom-color: rgba(0%,0%,0%,0);
+	border-left-color: rgba(0%,0%,0%,0);
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: 0pt;
+	border-right-width: 0pt;
+	border-bottom-width: 0pt;
+	border-left-width: 0pt;
+	border-top-right-radius: 0pt 0pt;
+	border-bottom-right-radius: 0pt 0pt;
+	border-bottom-left-radius: 0pt 0pt;
+	border-top-left-radius: 0pt 0pt;
+	border-image-source: none;
+	border-image-slice: 100% 100% 100% 100%;
+	border-image-width: 1 1 1 1;
+	border-image-outset: 0 0 0 0;
+	border-image-repeat: stretch stretch;
+	outline-width: 0pt;
+	outline-style: none;
+	outline-color: invert;
+	outline-offset: 0pt;
+	font-family: -fm-font-family(Helvetica,roman);
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-size: 12pt;
+	color: rgba(0%,0%,0%,1);
+	direction: ltr;
+	line-height: 1line;
+	block-progression: tb;
+	text-align: left;
+	text-transform: none;
+	text-indent: 0pt;
+	display: inline;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 0pt;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-bottom: 0pt;
+	margin-left: 0pt;
+	width: auto;
+	height: auto;
+	float: none;
+	clear: none;
+	overflow-x: visible;
+	overflow-y: visible;
+	overflow-style: auto;
+	visibility: visible;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+	position: static;
+	box-shadow: none;
+	box-sizing: content-box;
+	vertical-align: baseline;
+	-fm-digit-set: roman;
+	-fm-space-before: 0line;
+	-fm-space-after: 0line;
+	-fm-strikethrough: false;
+	-fm-underline: none;
+	-fm-paragraph-margin-left: 0pt;
+	-fm-paragraph-margin-right: 0pt;
+	-fm-tab-top-left-radius: 0 0;
+	-fm-tab-top-right-radius: 0 0;
+	-fm-use-default-appearance: false;
+	-fm-icon: none;
+	-fm-icon-color: rgba(0%,0%,0%,1);
+	-fm-tab-spacing: 0;
+	-fm-override-with-classic: false;
+	-fm-table-background-color: rgba(0%,0%,0%,0);
+	-fm-fill-effect: 0;
+	-fm-highlight-color: rgba(0%,0%,0%,0);
+	-fm-portal-alt-background: false;
+	-fm-text-vertical-align: top;
+	-fm-tategaki: false;
+	-fm-rotation: 0;
+	-fm-borders-between-reps: false;
+	-fm-borders-baseline: false;
+	-fm-body-alt-background: false;
+	-fm-texty-field: false;
+}
+self .text
+{
+	height: 100%;
+	box-sizing: border-box;
+}
+</LocalCSS>
+<FullCSS>
+self
+{
+	background-image: -webkit-gradient(linear,25% 0%,25% 100%, from(rgba(0%,71.53614044%,12.21347618%,1)), to(rgba(4.639130592%,38.70129013%,10.47503185%,1)));
+	background-position: 0% 0%;
+	background-size: auto;
+	background-repeat: repeat repeat;
+	background-origin: padding-box;
+	background-clip: border-box;
+	background-color: rgba(0%,0%,0%,0);
+	border-top-color: rgba(0%,0%,0%,0);
+	border-right-color: rgba(0%,0%,0%,0);
+	border-bottom-color: rgba(0%,0%,0%,0);
+	border-left-color: rgba(0%,0%,0%,0);
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: 0pt;
+	border-right-width: 0pt;
+	border-bottom-width: 0pt;
+	border-left-width: 0pt;
+	border-top-right-radius: 0pt 0pt;
+	border-bottom-right-radius: 0pt 0pt;
+	border-bottom-left-radius: 0pt 0pt;
+	border-top-left-radius: 0pt 0pt;
+	border-image-source: none;
+	border-image-slice: 100% 100% 100% 100%;
+	border-image-width: 1 1 1 1;
+	border-image-outset: 0 0 0 0;
+	border-image-repeat: stretch stretch;
+	outline-width: 0pt;
+	outline-style: none;
+	outline-color: invert;
+	outline-offset: 0pt;
+	font-family: -fm-font-family(tahoma,sans-serif,roman);
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-size: 15pt;
+	color: rgba(100%,100%,100%,1);
+	direction: ltr;
+	line-height: 1line;
+	block-progression: tb;
+	text-align: left;
+	text-transform: none;
+	text-indent: 0pt;
+	display: inline;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 0pt;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-bottom: 0pt;
+	margin-left: 0pt;
+	width: auto;
+	height: auto;
+	float: none;
+	clear: none;
+	overflow-x: visible;
+	overflow-y: visible;
+	overflow-style: auto;
+	visibility: visible;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+	position: static;
+	box-shadow: none;
+	box-sizing: content-box;
+	vertical-align: baseline;
+	-fm-digit-set: roman;
+	-fm-space-before: 0line;
+	-fm-space-after: 0line;
+	-fm-tab-stops: ;
+	-fm-strikethrough: false;
+	-fm-underline: none;
+	-fm-glyph-variant: ;
+	-fm-paragraph-margin-left: 15pt;
+	-fm-paragraph-margin-right: 0pt;
+	-fm-character-direction: ;
+	-fm-tab-top-left-radius: 0 0;
+	-fm-tab-top-right-radius: 0 0;
+	-fm-use-default-appearance: false;
+	-fm-icon: none;
+	-fm-icon-color: rgba(0%,0%,0%,1);
+	-fm-tab-spacing: 0;
+	-fm-override-with-classic: true;
+	-fm-table-background-color: rgba(0%,0%,0%,0);
+	-fm-fill-effect: 0;
+	-fm-highlight-color: rgba(0%,0%,0%,0);
+	-fm-portal-alt-background: false;
+	-fm-text-vertical-align: center;
+	-fm-tategaki: false;
+	-fm-rotation: 0;
+	-fm-borders-between-reps: false;
+	-fm-borders-baseline: false;
+	-fm-body-alt-background: false;
+	-fm-texty-field: false;
+}
+self .inner_border
+{
+	background-image: none;
+	background-position: 0% 0%;
+	background-size: auto;
+	background-repeat: repeat repeat;
+	background-origin: padding-box;
+	background-clip: border-box;
+	background-color: rgba(0%,0%,0%,0);
+	border-top-color: rgba(0%,0%,0%,0);
+	border-right-color: rgba(0%,0%,0%,0);
+	border-bottom-color: rgba(0%,0%,0%,0);
+	border-left-color: rgba(0%,0%,0%,0);
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: 0pt;
+	border-right-width: 0pt;
+	border-bottom-width: 0pt;
+	border-left-width: 0pt;
+	border-top-right-radius: 0pt 0pt;
+	border-bottom-right-radius: 0pt 0pt;
+	border-bottom-left-radius: 0pt 0pt;
+	border-top-left-radius: 0pt 0pt;
+	border-image-source: none;
+	border-image-slice: 100% 100% 100% 100%;
+	border-image-width: 1 1 1 1;
+	border-image-outset: 0 0 0 0;
+	border-image-repeat: stretch stretch;
+	outline-width: 0pt;
+	outline-style: none;
+	outline-color: invert;
+	outline-offset: 0pt;
+	font-family: -fm-font-family(Helvetica,roman);
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-size: 12pt;
+	color: rgba(0%,0%,0%,1);
+	direction: ltr;
+	line-height: 1line;
+	block-progression: tb;
+	text-align: left;
+	text-transform: none;
+	text-indent: 0pt;
+	display: inline;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 0pt;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-bottom: 0pt;
+	margin-left: 0pt;
+	width: auto;
+	height: auto;
+	float: none;
+	clear: none;
+	overflow-x: visible;
+	overflow-y: visible;
+	overflow-style: auto;
+	visibility: visible;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+	position: static;
+	box-shadow: none;
+	box-sizing: content-box;
+	vertical-align: baseline;
+	-fm-digit-set: roman;
+	-fm-space-before: 0line;
+	-fm-space-after: 0line;
+	-fm-tab-stops: ;
+	-fm-strikethrough: false;
+	-fm-underline: none;
+	-fm-glyph-variant: ;
+	-fm-paragraph-margin-left: 0pt;
+	-fm-paragraph-margin-right: 0pt;
+	-fm-character-direction: ;
+	-fm-tab-top-left-radius: 0 0;
+	-fm-tab-top-right-radius: 0 0;
+	-fm-use-default-appearance: false;
+	-fm-icon: none;
+	-fm-icon-color: rgba(0%,0%,0%,1);
+	-fm-tab-spacing: 0;
+	-fm-override-with-classic: false;
+	-fm-table-background-color: rgba(0%,0%,0%,0);
+	-fm-fill-effect: 0;
+	-fm-highlight-color: rgba(0%,0%,0%,0);
+	-fm-portal-alt-background: false;
+	-fm-text-vertical-align: top;
+	-fm-tategaki: false;
+	-fm-rotation: 0;
+	-fm-borders-between-reps: false;
+	-fm-borders-baseline: false;
+	-fm-body-alt-background: false;
+	-fm-texty-field: false;
+}
+self .text
+{
+	height: 100%;
+	box-sizing: border-box;
+}
+</FullCSS>
+<ThemeName>com.filemaker.theme.classic</ThemeName></Styles>
+</Object>
+</Layout></fmxmlsnippet></Clipboard><Picture>iVBORw0KGgoAAAANSUhEUgAAAhQAAACwCAIAAADYCmBjAAAABGdBTUEAANkDQtZPoQAAAAlwSFlz
+AAALEwAACxMBAJqcGAAAACR0RVh0U29mdHdhcmUAUXVpY2tUaW1lIDcuNy4xIChNYWMgT1MgWCkA
+ZAOCGAAAAAd0SU1FB90JGA0QOn7f4OAAAARYSURBVHic7dxBbttGAIVh0WK3dW/Qi3TZfTdFj5rr
+sY4NFYwTKforsmOm37cQRIGZeUYWgzdDcDp9+vUEAMXT6AAAHM98WkZHAOBoNA8AMs0DgEzzACDT
+PADI5ml0AgAOR/MAIHPmAUCmeQCQaR4AZHc0j+n0+Z63g/XlcvkfeySD/I+TX/5HyP8j5p+//4+X
+1edpxF/+YAb5Hye//I+Q/0fMb9sKgMyBOQCZ5gFApnkAkGkeAGSaBwDZ66O6X68f157tXf++du3Z
+4Xvur88g33O//PLLL7/8e+Y/T3/9cnMqAHjPK9kByJx5AJB52gqATPMAIJu/dzYPAO9pHgBkzjwA
+yJ5a81gun8vq8sbve4xT59pq3q3GkV9++eWv8241znb5z9Ofz+VfA4AzDwA6Zx4AZJoHAJnmAUCm
+eQCQaR4AZF7JDkBm2wqAzLYVAJnmAUCmeQCQaR4AZJoHAJnmAUCmeQCQaR4AZJoHAJnmAUCmeQCQ
+aR4AZJoHANk8fbN5TKfPjeTtde3L5fLBe9bW998zTiW//PLLL/+e+c9Pfzw/PBUA/y+2rQDIHJgD
+kGkeAGSaBwCZxQOAzLYVAJnFA4DMthUAmeYBQKZ5AJBpHgBkL81D9QCg0TwAyK68kh0ArtM8AMg8
+bQVApnkAkGkeAGSaBwCZ5gFApnkAkF1ZPJbL57K6/BfuGWerufYYU/795t1qHPn3G1P+/ebdapxx
++a9vWy1ffnnw7789zlZz7TGm/PvNu9U48u83pvz7zbvVOIPy27YCIHNgDkCmeQCQaR4AZJoHAJlX
+sgOQaR4AZM48AMg0DwAyzQOATPMAINM8AMg0DwCyQc1jen1N4/T6fblcHoj8Y8k/lvxjfYz884A5
+T1+95vdY/3Mn+UeTfyz5x/oY+W1bAZA5MAcgs3gAkNm2AiDzVl0AMs0DgGxuzwtfe754/fvaHvfc
+k0d++eWXX/4985/n359v3g4A79m2AiDzqC4AmeYBQKZ5AJBpHgBkL81D9QCg0TwAyJx5AJBpHgBk
+mgcAmeYBQOaV7ABkmgcAmTMPADLNA4DM4gFAZtsKgEzzACDTPADILB4AZLatAMg0DwAyzQOAzOIB
+QGbbCoBM8wAg0zwAyOZpdAIADkfzACBz5gFA9to83rau3r7cLiLT6dv3r39fuzbm3uPIL7/88su/
+Z/7zT7/9fPN2AHjPmQcAmTMPADLNA4BM8wAg0zwAyDQPALKDLB7L5XNZXR6I/GPJP5b8Y+2T/zjb
+VsuXX44S+x/yjyX/WPKPtUP+gzQPAD6S4zQPAD4Mr2QHINM8AMiceQCQvTQP1QOARvMAIHPmAUCm
+eQCQaR4AZJoHAJnmAUCmeQCQaR4AZJoHAJnFA4DMthUA2TxZPACIbFsBkNm2AiDTPADILB4AZLat
+AMg0DwAyzQOATPMAINM8AMg0DwAyzQOATPMAINM8AMjmaXQCAA5H8wAgc+YBQKZ5AJBpHgBkfwM0
+fVDfFFiWbwAAAABJRU5ErkJggg==</Picture></FMClipboard>

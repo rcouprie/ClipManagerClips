@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version><![CDATA[42042060]]></Version><Comment></Comment><SourceWindowName><![CDATA[Manage Custom Functions for “Template”]]></SourceWindowName><Class>XMFN</Class><ClipVersion>1</ClipVersion><ClipTimeStamp>-2.147484e+9</ClipTimeStamp><ClipAuthor><![CDATA[filemaker]]></ClipAuthor><clipboardAsText><![CDATA[isServer(  )]]></clipboardAsText><Clipboard><fmxmlsnippet type="FMObjectList"><CustomFunction id="63" functionArity="0" visible="True" parameters="" name="isServer"><Calculation>/**
+ * =====================================
+ * IsServer ( )
+ *
+ * RETURNS:
+ *		Returns 1 (true) if current user is the server (scheduled script)
+ *
+ * PARAMETERS:
+ *		n.a. *
+ * EXAMPLE:
+ *		if  ( isServer )
+ *
+ * DEPENDENCIES: none
+ *
+ * HISTORY:
+ *		MODIFIED on ... by ...
+ *		CREATED on 01-1-2013 by Richard Couprie
+ * =====================================
+ */
+
+PatternCount ( Get ( ApplicationVersion ) ; "server" ) &gt; 0
+or Get ( AccountName ) = "xml_account"</Calculation></CustomFunction></fmxmlsnippet></Clipboard><Picture></Picture></FMClipboard>

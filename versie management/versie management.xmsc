@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?><FMClipboard><Version><![CDATA[42022013]]></Version><Comment></Comment><SourceWindowName><![CDATA[Clip Manager]]></SourceWindowName><Class>XMSC</Class><ClipVersion>1</ClipVersion><ClipTimeStamp>3.463057e+9</ClipTimeStamp><ClipAuthor><![CDATA[richard]]></ClipAuthor><clipboardAsText><![CDATA[--  Kopieer versie managamenet: update @ startup!   ---  Tabel: versie beheer   --  TO: @versie beheer    --Layout: @versie beheer --@ versie management@ versie management subscripts	@ versie intern bekijken	@ versie extern bekijken	@ versie vergelijk]]></clipboardAsText><Clipboard><fmxmlsnippet type="FMObjectList"><Script includeInMenu="False" runFullAccess="False" id="509" name="-" clipID="311182"/><Script includeInMenu="False" runFullAccess="False" id="510" name="-  Kopieer versie managamenet: update @ startup!   -" clipID="191617"><Step enable="True" id="89" name="Comment"><Text>  QSLdebug is nodig</Text></Step></Script><Script includeInMenu="False" runFullAccess="False" id="511" name="-" clipID="924103"/><Script includeInMenu="False" runFullAccess="False" id="512" name="-  Tabel: versie beheer   -" clipID="571165"/><Script includeInMenu="False" runFullAccess="False" id="513" name="-  TO: @versie beheer    -" clipID="464886"/><Script includeInMenu="False" runFullAccess="False" id="514" name="-Layout: @versie beheer -" clipID="466821"/><Script includeInMenu="False" runFullAccess="False" id="515" name="-" clipID="994342"/><Script includeInMenu="False" runFullAccess="False" id="516" name="@ versie management" clipID="520027"><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="89" name="Comment"><Text>==============================================</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Purpose:		
+Bijhouden van de juiste versie</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Parameters:	
+-</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Called by:		
+Self en trigger (Shutdown)</Text></Step><Step enable="True" id="89" name="Comment"><Text>   					
+@ startup</Text></Step><Step enable="True" id="89" name="Comment"><Text>   					
+@ shutdown</Text></Step><Step enable="True" id="89" name="Comment"><Text>   					
+@ Menu ( menuitem )</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Author:               Richard Couprie</Text></Step><Step enable="True" id="89" name="Comment"><Text>   History:		
+Last change:</Text></Step><Step enable="True" id="89" name="Comment"><Text>					
+Richard Couprie
+::
+22-05-2013 / </Text></Step><Step enable="True" id="89" name="Comment"><Text>						
+Dependencies</Text></Step><Step enable="True" id="89" name="Comment"><Text>					
+Richard Couprie
+::
+11-05-2013 / </Text></Step><Step enable="True" id="89" name="Comment"><Text>						
+INTERN EN EXTERN</Text></Step><Step enable="True" id="89" name="Comment"><Text>					
+Richard Couprie
+::
+06-04-2013 / </Text></Step><Step enable="True" id="89" name="Comment"><Text>						
+Ook handmatig te gebruiken</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Notes:			
+Dependencies: </Text></Step><Step enable="True" id="89" name="Comment"><Text>   				
+CF's:			
+debug</Text></Step><Step enable="True" id="89" name="Comment"><Text>   				
+				
+developer</Text></Step><Step enable="True" id="89" name="Comment"><Text>   				
+				
+devIP</Text></Step><Step enable="True" id="89" name="Comment"><Text>   				
+Layout:			
+@versie management </Text></Step><Step enable="True" id="89" name="Comment"><Text>   				
+Myzet Server:		
+@versie management</Text></Step><Step enable="True" id="89" name="Comment"><Text>==============================================</Text></Step><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="89" name="Comment"><Text>   Interne Versie management</Text></Step><Step enable="True" id="68" name="If"><Calculation>m_DevIP</Calculation></Step><Step enable="True" id="86" name="Set Error Capture"><Set state="False"/></Step><Step enable="True" id="1" name="Perform Script"><Script id="520" name="  @ versie | haal interne versie op"/></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>#Assign ( Get ( ScriptResult ) )</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$!</Name></Step><Step enable="True" id="89" name="Comment"><Text>  go to layout "@versie management"</Text></Step><Step enable="True" id="6" name="Go to Layout"><LayoutDestination value="SelectedLayout"/><Layout id="84" name="@versie management"/></Step><Step enable="True" id="68" name="If"><Calculation>Get ( LastError ) ≠ 0</Calculation></Step><Step enable="True" id="87" name="Show Custom Dialog"><Title><Calculation>Error</Calculation></Title><Message><Calculation>"Er is geen layout @versie management"</Calculation></Message><Buttons><Button CommitState="True">oeps</Button><Button CommitState="False"/><Button CommitState="False"/></Buttons></Step><Step enable="True" id="103" name="Exit Script"/><Step enable="True" id="70" name="End If"/><Step enable="False" id="39" name="Sort Records"><NoInteract state="True"/><Restore state="True"/><SortList Maintain="True" value="True"><Sort type="Descending"><PrimaryField><Field table="@versie management" id="6" name="modificationTimestamp"/></PrimaryField></Sort></SortList></Step><Step enable="False" id="16" name="Go to Record/Request/Page"><NoInteract state="False"/><RowPageLocation value="First"/></Step><Step enable="False" id="76" name="Set Field"><Calculation>@versie management::bericht</Calculation><Field table="@versie management" id="20" name="gBERICHT"/></Step><Step enable="True" id="89" name="Comment"/><Step enable="True" id="89" name="Comment"><Text>  Show Custom Dialog met invoerveld gBERICHT</Text></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>"Versie beheer: v.0.0" &amp; $lokaal.versie // Max ( @versie management::versie )</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$title</Name></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>$lokaal.bericht &amp; "… doen?"</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$message</Name></Step><Step enable="True" id="87" name="Show Custom Dialog"><Title><Calculation>$title</Calculation></Title><Message><Calculation>$message</Calculation></Message><Buttons><Button CommitState="True">ja</Button><Button CommitState="False">NEE</Button><Button CommitState="False">annuleer</Button></Buttons><InputFields><InputField UsePasswordCharacter="False"><Field table="@versie management" id="20" name="gBERICHT"/><Label><Calculation>"Wat heb je gedaan?"</Calculation></Label></InputField><InputField UsePasswordCharacter="False"><Field table="" id="0" name=""/></InputField><InputField UsePasswordCharacter="False"><Field table="" id="0" name=""/></InputField></InputFields></Step><Step enable="True" id="68" name="If"><Calculation>Get (LastMessageChoice ) = 2</Calculation></Step><Step enable="True" id="103" name="Exit Script"/><Step enable="True" id="125" name="Else If"><Calculation>Get (LastMessageChoice ) = 3 // annuleer</Calculation></Step><Step enable="True" id="6" name="Go to Layout"><LayoutDestination value="OriginalLayout"/></Step><Step enable="True" id="90" name="Halt Script"/><Step enable="True" id="70" name="End If"/><Step enable="True" id="89" name="Comment"/><Step enable="True" id="7" name="New Record/Request"/><Step enable="True" id="76" name="Set Field"><Calculation>@versie management::gBERICHT</Calculation><Field table="@versie management" id="19" name="bericht"/></Step><Step enable="True" id="75" name="Commit Records/Requests"><NoInteract state="False"/><Option state="False"/><ESSForceCommit state="False"/></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>#Assign ( List ( 
+			# ( "lokaal.id" ; @versie management::id )
+			; # ( "lokaal.versie" ; @versie management::versie )
+			; # ( "lokaal.bericht" ; @versie management::bericht )
+			)
+)</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$!</Name></Step><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="89" name="Comment"><Text>  Externe Versie management</Text></Step><Step enable="True" id="89" name="Comment"><Text>  open extern</Text></Step><Step enable="True" id="1" name="Perform Script"><Script id="518" name="  @ versie | open extern"/></Step><Step enable="True" id="89" name="Comment"><Text>  versie extern script</Text></Step><Step enable="True" id="1" name="Perform Script"><Calculation>List ( 
+			# ( "lokaal.id" ; @versie management::id )
+			; # ( "lokaal.versie" ; @versie management::versie )
+			; # ( "lokaal.bericht" ; @versie management::bericht )
+			)</Calculation><Script id="519" name="  @ versie | extern script"/></Step><Step enable="True" id="89" name="Comment"><Text>  close file dev</Text></Step><Step enable="True" id="1" name="Perform Script"><Script id="522" name="  @ versie | close file dev"/></Step><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="6" name="Go to Layout"><LayoutDestination value="OriginalLayout"/></Step><Step enable="True" id="70" name="End If"/><Step enable="True" id="103" name="Exit Script"/></Script><Group groupCollapsed="True" includeInMenu="False" id="517" name="@ versie management subscripts" clipID="671101"><Script includeInMenu="False" runFullAccess="False" id="518" name="  @ versie | open extern" clipID="406326"><Step enable="True" id="89" name="Comment"><Text>open m_dev</Text></Step><Step enable="True" id="33" name="Open File"><Option state="False"/><FileReference id="69" name="m_dev"><UniversalPathList>file:M_dev</UniversalPathList></FileReference></Step><Step enable="True" id="103" name="Exit Script"/></Script><Script includeInMenu="False" runFullAccess="False" id="519" name="  @ versie | extern script" clipID="226061"><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="89" name="Comment"><Text>==============================================</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Purpose:		
+versiemanagement EXTERN in een bestand plaatsen</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Parameters:	
+n.a.</Text></Step><Step enable="True" id="89" name="Comment"><Text>                              ---------------------------</Text></Step><Step enable="True" id="89" name="Comment"><Text>				
+Assign</Text></Step><Step enable="True" id="89" name="Comment"><Text>                              ---------------------------</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Called by:		
+(script) any</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Author:               Richard Couprie</Text></Step><Step enable="True" id="89" name="Comment"><Text>   History:		
+Last change:</Text></Step><Step enable="True" id="89" name="Comment"><Text>				
+Richard Couprie
+::
+18-05-2013</Text></Step><Step enable="True" id="89" name="Comment"><Text>				
+  / Template aangepast</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Notes:			
+None</Text></Step><Step enable="True" id="89" name="Comment"><Text>==============================================</Text></Step><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="89" name="Comment"><Text>  INIT variabelen</Text></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>		Null</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$myDebug</Name></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>		Null</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$filenaam</Name></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>		Null</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$path</Name></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>		Null</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$host</Name></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>		Null</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$bericht</Name></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>		Null</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$extern.id</Name></Step><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>#Assign ( Get ( ScriptParameter ) )</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$!</Name></Step><Step enable="True" id="89" name="Comment"><Text> Debug waarde wel / niet vasthouden</Text></Step><Step enable="True" id="68" name="If"><Calculation>not $$DEBUG</Calculation></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>1</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$toggleDebugOFF</Name></Step><Step enable="True" id="70" name="End If"/><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>"test  | " &amp; Debug</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$test</Name></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>$~debugOutput</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$$DEBUG</Name></Step><Step enable="True" id="89" name="Comment"><Text> voor testing...</Text></Step><Step enable="False" id="141" name="Set Variable"><Value><Calculation>/*Let ( [
+
+	 ~myHost = If 	(  
+				IsEmpty ( Get ( HostIPAddress )  ) 
+				; "Local - " &amp; Get ( HostName ) &amp; "@" 
+					&amp; Get ( SystemIPAddress ) 
+				; Get ( HostName ) 
+					&amp; "@" 
+					&amp; Get ( HostIPAddress ) 
+				)
+];
+#Assign ( List	(  	
+	# ( "myDebug" 	; $$DEBUG ) ; 
+	# ( "filenaam" 	; Get ( FileName ) ) ; 
+	# ( "path" 		; Get ( FilePath ) );
+	# ( "host" 		; 1 ) ;
+	# ( "bericht" 	; @versie management::gBERICHT ) ;
+	# ( "versie" 	; @versie management::versie ) ;
+	# ( "id extern"	; @versie management::id )
+	) )
+)*/</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$vars</Name></Step><Step enable="False" id="141" name="Set Variable"><Value><Calculation>/*#Assign ( 
+
+List	(  	
+	# ( "myDebug" 	; $$DEBUG ) ; 
+	# ( "filenaam" 	; Get ( FileName ) ) ; 
+	# ( "path" 		; Get ( FilePath ) );
+	# ( "host" 		; 1 ) ;
+	# ( "bericht" 	; @versie management::gBERICHT ) ;
+	# ( "versie" 	; @versie management::versie ) ;
+	# ( "id extern"	; @versie management::id )
+	)
+
+ )*/</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$!</Name></Step><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="1" name="Perform Script"><FileReference id="69" name="m_dev"><UniversalPathList>file:M_dev</UniversalPathList></FileReference><Calculation>Let ( 
+
+	 ~myHost = If 	(  
+				IsEmpty ( Get ( HostIPAddress )  ) 
+				; "Local -" &amp; Get ( HostName ) &amp; "@" &amp; Get ( SystemIPAddress ) 
+				; Get ( HostName ) 
+					&amp; "@"
+					&amp; Get ( HostIPAddress ) 							)
+;
+List	(  	
+	  # ( "myDebug" ; $$DEBUG ) 
+	; # ( "filenaam" 	; Get ( FileName )  )
+	; # ( "path" 	; Get ( FilePath )  )
+	; # ( "host" 	;  ~myHost ) 
+	; # ( "bericht" 	; $lokaal.bericht ) 
+	; # ( "versie" 	; $lokaal.versie ) 
+	; # ( "id extern"	; $lokaal.id )
+
+	)
+)
+/*
+List	(  	
+	  # ( "myDebug" 	; $myDebug 	)
+	; # ( "filenaam" 		; $filenaam  	)
+	; # ( "path" 		; $path		)
+	; # ( "host" 		; $host		)
+	; # ( "bericht" 		; $bericht 		)
+	; # ( "versie" 		; $versie 	 	)
+	; # ( "id extern"		; $id extern 	)
+	)
+*/</Calculation><Script id="1" name="@ versie | extern script"/></Step><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="89" name="Comment"><Text> Debug waarde herstellen</Text></Step><Step enable="True" id="68" name="If"><Calculation>$toggleDebugOFF</Calculation></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>Null</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$$DEBUG</Name></Step><Step enable="True" id="70" name="End If"/><Step enable="True" id="103" name="Exit Script"/></Script><Script includeInMenu="False" runFullAccess="False" id="520" name="  @ versie | haal interne versie op" clipID="954714"><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="89" name="Comment"><Text>==============================================</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Purpose:		
+De gegevens van de laatste vesrie ophalen</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Parameters:	
+n.a.</Text></Step><Step enable="True" id="89" name="Comment"><Text>                              ---------------------------</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Called by:		
+(script) @ versie vergelijk</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Author:               Richard Couprie</Text></Step><Step enable="True" id="89" name="Comment"><Text>   History:		
+Last change:</Text></Step><Step enable="True" id="89" name="Comment"><Text>				
+Richard Couprie
+::
+18-05-2013</Text></Step><Step enable="True" id="89" name="Comment"><Text>				
+  / Template aangepast</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Notes:			
+None</Text></Step><Step enable="True" id="89" name="Comment"><Text>==============================================</Text></Step><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="89" name="Comment"><Text>  INIT variabelen</Text></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>	Null</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$sort.versie</Name></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>		Null</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$lokaal.id</Name></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>	Null</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$lokaal.versie</Name></Step><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>Let ( [	  selectField 	= Quote (  FieldName 	( @versie management::versie  ) )
+		; selectField2 	= Quote (  FieldName 	( @versie management::id  ) )
+		; fromTable 	= Quote (  TableName 	( @versie management::id  ) )
+
+		; versie = SqlDebug ( ExecuteSQL ( "SELECT MAX (" &amp; selectField &amp; " )   from " &amp; fromTable  ; "-" ; "¶"  ) )
+		; result = SqlDebug ( ExecuteSQL ( "SELECT " &amp; selectField2 &amp; "  from " &amp; fromTable &amp; " WHERE " &amp; selectField &amp; " =?"  ; "-" ; "¶" ; versie ) )
+	];
+	result
+)</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$lokaal.id</Name></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>Let ( [	  selectField 	= Quote (  FieldName 	( @versie management::versie  ) )
+		; fromTable 	= Quote (  TableName 	( @versie management::versie  ) )
+
+		/* external file only: 
+		 ; whereField 	= Quote (  FieldName 	( @BT_versie management::file | naam ) )
+		; result = ExecuteSQL ( "SELECT  Max ( " &amp; selectField &amp; " )  from " &amp; fromTable &amp; " where " &amp; whereField &amp; " = ?"   ; "-" ; "¶" ; $filenaam )
+		*/
+
+		; result = ExecuteSQL ( "SELECT  Max ( " &amp; selectField &amp; " )  from " &amp; fromTable   ; "-" ; "¶"  )
+	];
+	result
+)</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$lokaal.versie</Name></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>Let ( [	  selectField 	= Quote (  FieldName 	( @versie management::versie  ) )
+		; selectField2 	= Quote (  FieldName 	( @versie management::bericht ) )
+		; fromTable 	= Quote (  TableName 	( @versie management::id  ) )
+
+
+		; versie = SqlDebug ( ExecuteSQL ( "SELECT MAX (" &amp; selectField &amp; " )   from " &amp; fromTable  ; "-" ; "¶"  ) )
+		; result = SqlDebug ( ExecuteSQL ( "SELECT " &amp; selectField2 &amp; "  from " &amp; fromTable &amp; " WHERE " &amp; selectField &amp; " =?"  ; "-" ; "¶" ; versie ) )
+	];
+	result
+)</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$lokaal.bericht</Name></Step><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="103" name="Exit Script"><Calculation>List ( 
+  # ( "lokaal.id" 		; $lokaal.id )
+; # ( "lokaal.versie" 	; $lokaal.versie )
+; # ( "lokaal.bericht" 	; $lokaal.bericht )
+)</Calculation></Step><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="89" name="Comment"><Text/></Step></Script><Script includeInMenu="False" runFullAccess="False" id="521" name="  @ versie | haal EXTERNE versie op" clipID="683367"><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="89" name="Comment"><Text>==============================================</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Purpose:		
+Vergelijk deze LOKALE versie van het bestand met de laatste versie</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Parameters:	
+n.a.</Text></Step><Step enable="True" id="89" name="Comment"><Text>                              ---------------------------</Text></Step><Step enable="True" id="89" name="Comment"><Text>				
+$een = (string) "terug", "init"</Text></Step><Step enable="True" id="89" name="Comment"><Text>                              ---------------------------</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Called by:		
+(script) any</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Author:               Richard Couprie</Text></Step><Step enable="True" id="89" name="Comment"><Text>   History:		
+Last change:</Text></Step><Step enable="True" id="89" name="Comment"><Text>				
+Richard Couprie
+::
+18-05-2013</Text></Step><Step enable="True" id="89" name="Comment"><Text>				
+  / Template aangepast</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Notes:			
+None</Text></Step><Step enable="True" id="89" name="Comment"><Text>==============================================</Text></Step><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="89" name="Comment"><Text>  INIT variabelen</Text></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>	Null</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$extern.versie</Name></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>		Null</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$extern.id</Name></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>		Null</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$fileNaam</Name></Step><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="79" name="Freeze Window"/><Step enable="True" id="141" name="Set Variable"><Value><Calculation>Get ( FileName )</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$fileNaam</Name></Step><Step enable="True" id="89" name="Comment"><Text>  haal Externe versie en ID op van dit bestand</Text></Step><Step enable="True" id="1" name="Perform Script"><FileReference id="69" name="m_dev"><UniversalPathList>file:M_dev</UniversalPathList></FileReference><Calculation># ( "filenaam" ; $filenaam )</Calculation><Script id="4" name="@ versie vergelijk"/></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>#Assign ( Get ( ScriptResult ) )</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$!</Name></Step><Step enable="True" id="103" name="Exit Script"><Calculation>List ( 
+  # ( "extern.id" ; $extern.id )
+; # ( "extern.versie" ; $extern.versie )
+)</Calculation></Step></Script><Script includeInMenu="False" runFullAccess="False" id="522" name="  @ versie | close file dev" clipID="366480"><Step enable="False" id="1" name="Perform Script"><Script id="523" name="  @ versie | close file extern versie"/></Step><Step enable="True" id="34" name="Close File"><FileReference id="69" name="m_dev"><UniversalPathList>file:M_dev</UniversalPathList></FileReference></Step><Step enable="True" id="103" name="Exit Script"/></Script><Script includeInMenu="False" runFullAccess="False" id="523" name="  @ versie | close file extern versie" clipID="95133"><Step enable="True" id="1" name="Perform Script"><FileReference id="69" name="m_dev"><UniversalPathList>file:M_dev</UniversalPathList></FileReference><Script id="2" name="  @ versie | close file"/></Step><Step enable="True" id="103" name="Exit Script"/></Script></Group><Script includeInMenu="False" runFullAccess="False" id="525" name="@ versie intern bekijken" clipID="904621"><Step enable="True" id="122" name="New Window"><Name><Calculation>"@versie Management"</Calculation></Name><Height><Calculation>500</Calculation></Height><Width><Calculation>1200</Calculation></Width><DistanceFromTop><Calculation>20</Calculation></DistanceFromTop><DistanceFromLeft><Calculation>0</Calculation></DistanceFromLeft><NewWndStyles Styles="2148467202"/></Step><Step enable="True" id="6" name="Go to Layout"><LayoutDestination value="SelectedLayout"/><Layout id="84" name="@versie management"/></Step><Step enable="True" id="103" name="Exit Script"/></Script><Script includeInMenu="False" runFullAccess="False" id="526" name="@ versie extern bekijken" clipID="693987"><Step enable="True" id="89" name="Comment"><Text>open m_dev en voer uit:</Text></Step><Step enable="True" id="1" name="Perform Script"><FileReference id="69" name="m_dev"><UniversalPathList>file:M_dev</UniversalPathList></FileReference><Calculation>List ( # ("actie" ; "bekijk") ; # ( "filenaam" ; Get ( FileName ) ) )</Calculation><Script id="3" name="  @ versie | haal externe versie op"/></Step><Step enable="True" id="103" name="Exit Script"/></Script><Script includeInMenu="False" runFullAccess="False" id="527" name="@ versie vergelijk" clipID="385897"><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="89" name="Comment"><Text>==============================================</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Purpose:		
+Bijhouden van de juiste versie</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Parameters:	
+-</Text></Step><Step enable="True" id="89" name="Comment"><Text>                              ---------------------------</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Called by:		
+Self en trigger (Shutdown)</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Author:               Richard Couprie</Text></Step><Step enable="True" id="89" name="Comment"><Text>   History:		
+Last change:</Text></Step><Step enable="True" id="89" name="Comment"><Text>				
+Richard Couprie
+::
+20-05-2013 / </Text></Step><Step enable="True" id="89" name="Comment"><Text>				
+   INTERN EN EXTERN</Text></Step><Step enable="True" id="89" name="Comment"><Text>				
+Richard Couprie
+::
+11-05-2013 / </Text></Step><Step enable="True" id="89" name="Comment"><Text>				
+   INTERN EN EXTERN</Text></Step><Step enable="True" id="89" name="Comment"><Text>				
+Richard Couprie
+::
+06-04-2013 / </Text></Step><Step enable="True" id="89" name="Comment"><Text>				
+   Ook handmatig te gebruiken</Text></Step><Step enable="True" id="89" name="Comment"><Text>   Notes:			
+Dependencies: </Text></Step><Step enable="True" id="89" name="Comment"><Text>   				
+CF's:			
+debug</Text></Step><Step enable="True" id="89" name="Comment"><Text>   				
+				
+developer</Text></Step><Step enable="True" id="89" name="Comment"><Text>   				
+				
+devIP</Text></Step><Step enable="True" id="89" name="Comment"><Text>   				
+Layout:			
+@versie management </Text></Step><Step enable="True" id="89" name="Comment"><Text>   				
+Myzet Server:		
+@versie management</Text></Step><Step enable="True" id="89" name="Comment"><Text>==============================================</Text></Step><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="68" name="If"><Calculation>m_DevIP</Calculation></Step><Step enable="True" id="89" name="Comment"><Text>  INIT variabelen</Text></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>	Null</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$lokaal.id</Name></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>	Null</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$lokaal.versie</Name></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>	Null</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$extern.versie</Name></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>		Null</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$extern.id</Name></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>		Null</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$fileNaam</Name></Step><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>TriggersDisable</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$!</Name></Step><Step enable="True" id="89" name="Comment"><Text>   Interne Versie management</Text></Step><Step enable="True" id="1" name="Perform Script"><Script id="520" name="  @ versie | haal interne versie op"/></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>#Assign ( Get (ScriptResult ) )</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$!</Name></Step><Step enable="True" id="6" name="Go to Layout"><LayoutDestination value="OriginalLayout"/></Step><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="89" name="Comment"><Text>  Externe Versie management</Text></Step><Step enable="True" id="1" name="Perform Script"><Script id="518" name="  @ versie | open extern"/></Step><Step enable="True" id="1" name="Perform Script"><Script id="521" name="  @ versie | haal EXTERNE versie op"/></Step><Step enable="True" id="141" name="Set Variable"><Value><Calculation>#Assign ( Get (ScriptResult ) )</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$!</Name></Step><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="89" name="Comment"><Text>  close versiebeheer</Text></Step><Step enable="True" id="1" name="Perform Script"><Script id="523" name="  @ versie | close file extern versie"/></Step><Step enable="True" id="89" name="Comment"><Text>  close dev</Text></Step><Step enable="True" id="1" name="Perform Script"><Script id="522" name="  @ versie | close file dev"/></Step><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="89" name="Comment"><Text/></Step><Step enable="True" id="68" name="If"><Calculation>$extern.id ≠ $lokaal.id</Calculation></Step><Step enable="True" id="66" name="Speak"><Calculation>"Oei! De twee versies van " &amp; Get ( FileName ) &amp; " zijn niet eender! Interne versie is " 
+&amp; 
+If ( $lokaal.versie ; $lokaal.versie; "onbekend" )
+&amp; ". Extern is de versie … " 
+&amp; 
+If (  $extern.versie ; $extern.versie ; "onbekend" )</Calculation><SpeechOptions WaitForCompletion="False" VoiceName="Ellen" VoiceId="226" VoiceCreator="roar"/></Step><Step enable="True" id="69" name="Else"/><Step enable="True" id="66" name="Speak"><Calculation>"…Amai, … De twee versies zijn gelukkig gelijk!! Namelijk: " &amp; $lokaal.versie</Calculation><SpeechOptions WaitForCompletion="False" VoiceName="Ellen" VoiceId="226" VoiceCreator="roar"/></Step><Step enable="True" id="70" name="End If"/><Step enable="True" id="70" name="End If"/><Step enable="True" id="141" name="Set Variable"><Value><Calculation>TriggersEnable</Calculation></Value><Repetition><Calculation>1</Calculation></Repetition><Name>$!</Name></Step><Step enable="True" id="103" name="Exit Script"/></Script></fmxmlsnippet></Clipboard><Picture></Picture></FMClipboard>
