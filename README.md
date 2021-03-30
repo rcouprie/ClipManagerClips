@@ -2,4 +2,4 @@ ClipManagerClips
 ================
 
 Clipmanager Clips
-just some persenal stuff
+just some personal stuff
